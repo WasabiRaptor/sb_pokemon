@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "crewSize" : 2
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "luxioT1.png",
+      "position" : [3, 0],
+      "fullbright" : true
+    },
+    {
+      "image" : "luxioT1lit.png",
+      "position" : [3, 0]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "luxioT1blocks.png"
+}
