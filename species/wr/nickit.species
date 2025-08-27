@@ -11,7 +11,22 @@
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
+	"buildScripts" : ["/humanoid/opensb/build.lua"],
 	"humanoidOverrides" : {
+		"useAnimation" : true,
+		"animation" : {
+			"version" : 1,
+			"globalTagDefaults" : {},
+			"includes" : [
+				"/humanoid/opensb/humanoid.animation",
+				"/humanoid/wr/layered_emote.animation"
+			],
+			"animatedParts" : {
+				"stateTypes" : {},
+				"parts" : {}
+			},
+			"transformationGroups" : {}
+		},
 		"particleEmitters": {
 			"deathPoof" : {
 				"particles" : [
