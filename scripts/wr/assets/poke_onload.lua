@@ -28,11 +28,13 @@ for _, species in ipairs(races) do
         }
     })
     ai_patch = sb.jsonMerge(ai_patch, {
-        [species] = speciesConfig.ai or {
-            aiFrames = "NovakidAI.png",
-            portraitFrames = "portraits/novakidportrait.png",
-            staticFrames = "staticGlitch.png"
-        }
+		species = {
+			[species] = speciesConfig.ai or {
+				aiFrames = "NovakidAI.png",
+				portraitFrames = "portraits/novakidportrait.png",
+				staticFrames = "staticGlitch.png"
+			},
+		}
     })
 
     player_patch = sb.jsonMerge(player_patch, {
