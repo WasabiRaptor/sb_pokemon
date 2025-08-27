@@ -11,8 +11,32 @@
 //    "bodyFullbright" : true
 //  },
 
-  "humanoidConfig": "/species/luxiobodyconfig.config",
-  "nameGen" : [ "/species/luxiomalenamegen.config:names", "/species/luxiofemalenamegen.config:names" ],
+	"humanoidConfig" : "/humanoid/wr/quadruped.config",
+  "humanoidOverrides" : {
+    "particleEmitters": {
+      "deathPoof" : {
+        "particles" : [
+          {
+            "particle" : {
+              "type" : "animated",
+              "animation" : "/animations/playerdeath-luxio/playerdeath.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 1],
+              "timeToLive" : 1.0,
+              "layer" : "middle"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "nameGen" : [ "/species/wr/luxiomalenamegen.config:names", "/species/wr/luxiofemalenamegen.config:names" ],
   "ouchNoises" : [ "/sfx/luxio/luxiohurt.ogg", "/sfx/luxio/luxiohurt.ogg" ],
   "charGenTextLabels" : [ "Main colors", "-", "Collar", "Clothes", "Hair shape", "Accent color", "Collar color", "Clothes color", "LUXIO", "Personality" ],
   "skull" : "/humanoid/luxio/dead.png",

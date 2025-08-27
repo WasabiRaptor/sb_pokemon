@@ -3,14 +3,14 @@
 
 
 	"charCreationTooltip" : {
-			"title" : "Flareon",
-			"subTitle" : "Floofer",
-			"description" : "The floofiest floof."
+		"title" : "Flareon",
+		"subTitle" : "Floofer",
+		"description" : "The floofiest floof."
 	},
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
-	"humanoidConfig" : "/species/wr/quadruped.config",
+	"humanoidConfig" : "/humanoid/wr/quadruped.config",
 	"humanoidOverrides" : {
 		"particleEmitters": {
 			"deathPoof" : {
