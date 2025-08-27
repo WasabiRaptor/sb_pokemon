@@ -1,0 +1,13 @@
+{
+	"version" : "0.0",
+	"tags" : "",
+	"author" : "Zygan, Wasabi_Raptor",
+	"description" : "",
+	"name" : "wr_pokemon",
+	"friendlyName" : "Raptor's Pokemon Mod",
+	"includes" : [],
+	"scripts" : {
+		"onLoad" : ["/scripts/wr/assets/poke_onload.lua"]
+	}
+
+}

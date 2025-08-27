@@ -79,7 +79,7 @@
           "position" : [480, 1000]
         }
       ],
-     "startTime" : 0.5,
+     "startTime" : 0.0,
      "loopTime" : 1.0
     },
     {
@@ -102,7 +102,7 @@
           "position" : [480, 1000]
         }
       ],
-     "startTime" : 0.85,
+     "startTime" : 0.0,
      "loopTime" : 1.0
     },
 // lower layer
@@ -126,7 +126,7 @@
           "position" : [480, 1000]
         }
       ],
-     "startTime" : 0.5,
+     "startTime" : 0.0,
      "loopTime" : 1.0
     },
     {
@@ -149,7 +149,7 @@
           "position" : [480, 1000]
         }
       ],
-     "startTime" : 1.5,
+     "startTime" : 0.0,
      "loopTime" : 1.0
     },
     {
@@ -178,83 +178,83 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/teleport/up_luxio.png:<frame>"
+          "image" : "/cinematics/teleport/deploypodin_wr.png:<frame><effectDirectives>"
         }
       ],
-      "animationFrames" : 4,
+      "animationFrames" : 10,
       "keyframes" : [
         {
           "timecode" : 0.0,
           "zoom" : 2,
-          "alpha" : 0,
-          "frame" : 2,
-          "position" : [483, -100]
+          "alpha" : 1.0,
+          "frame" : 1,
+          "position" : [483, 348]
         },
         {
-          "timecode" : 0.5,
+          "timecode" : 0.4,
           "zoom" : 2,
-          "alpha" : 1,
-          "frame" : 8,
-          "position" : [483, 1000]
-        },
-        {
-          "timecode" : 0.6,
-          "zoom" : 2,
-          "alpha" : 0,
+          "alpha" : 1.0,
           "frame" : 10,
-          "position" : [483, 1000]
+          "position" : [483, 348]
+        },
+        {
+          "timecode" : 0.4,
+          "zoom" : 2,
+          "alpha" : 0.0,
+          "frame" : 10,
+          "position" : [483, 348]
         }
       ]
     },
     {
       "drawables" : [
         {
-          "image" : "/cinematics/teleport/warpdown_luxio.png:<frame>"
+          "image" : "/cinematics/teleport/deploypod_wr.png:<frame>"
         }
       ],
-      "animationFrames" : 4,
+      "animationFrames" : 2,
       "keyframes" : [
         {
           "timecode" : 0.0,
-          "zoom" : 2,
+          "zoom": 2,
           "alpha" : 0,
-          "frame" : 2,
-          "position" : [483, 1000]
-        },
-        {
-          "timecode" : 0.5,
-          "zoom" : 2,
-          "alpha" : 1,
-          "frame" : 2,
-          "position" : [483, 1000]
-        },
-        {
-          "timecode" : 0.7,
-          "zoom" : 2,
-          "alpha" : 1,
-          "frame" : 2,
+          "frame" : 1,
           "position" : [483, 300]
         },
         {
-          "timecode" : 1,
-          "zoom" : 2,
-          "alpha" : 1,
-          "frame" : 8,
+          "timecode" : 0.4,
+          "zoom": 2,
+          "alpha" : 0,
+          "frame" : 1,
           "position" : [483, 300]
         },
         {
-          "timecode" : 5.5,
-          "zoom" : 2,
+          "timecode" : 0.4,
+          "zoom": 2,
           "alpha" : 1,
-          "frame" : 80,
+          "frame" : 1,
           "position" : [483, 300]
+        },
+        {
+          "timecode" : 1.4,
+          "zoom": 2,
+          "alpha" : 1,
+          "frame" : 10,
+          "position" : [483, 292]
+        },
+        {
+          "timecode" : 3.4,
+          "zoom": 2,
+          "alpha" : 1,
+          "frame" : 30,
+          "position" : [483, 290]
         },
         {
           "timecode" : 10000,
           "alpha" : 1,
-          "zoom" : 2,
+          "zoom": 2,
           "frame" : 100000,
-          "position" : [483, 300]
+          "position" : [483, 290]
         }
       ]
     }
@@ -267,6 +267,10 @@
     {
       "timecode" : 0,
       "resource" : "/sfx/cinematics/teleporting_start.ogg"
+    },
+    {
+      "timecode" : 0,
+      "resource" : "/sfx/cinematics/despatch_loop.ogg"
     },
     {
       "timecode" : 0,
