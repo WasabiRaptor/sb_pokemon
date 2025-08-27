@@ -28,9 +28,9 @@ for _, species in ipairs(races) do
 	assets.patch("/ai/ai.config", sb.printJson({
 		speciesShips = {
 			[species] = speciesConfig.ai or {
-				aiFrames = "",
-				portraitFrames = "",
-				staticFrames = ""
+				aiFrames = "NovakidAI.png",
+				portraitFrames = "portraits/novakidportrait.png",
+				staticFrames = "staticGlitch.png"
 			}
 		}
 	}))
@@ -102,6 +102,11 @@ for _, species in ipairs(races) do
 	if not assets.exists("/scripted/techupgrade/suits/" .. species .. "-male-legs.png") then
 		assets.add("/scripted/techupgrade/suits/" .. species .. "-male-legs.png",
 			assets.image("/scripted/techupgrade/suits/wr/template-male-legs.png"))
+	end
+
+	if not assets.exists("/ai/portraits/"..species.."questportrait.png") then
+		assets.add("/ai/portraits/"..species.."questportrait.png",
+			assets.image("/ai/portraits/novakidquestportrait.png"))
 	end
 
 end
