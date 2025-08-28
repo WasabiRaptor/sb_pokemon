@@ -156,7 +156,7 @@
 			"facialMask" : [ ]
 		}
 	],
-	"baseColorMap" : {
+	"baseColorPalette" : {
 		"primary" : ["b6552c","cc663a","e87c4c"], //orange body
 		"secondary" : ["beab5a","dcc97d","f8e8a1"], // pale yellow mane
 		"tertiary" : ["afb3cd","c8cbdf","eef0ff"], // underbelly

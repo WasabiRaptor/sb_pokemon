@@ -131,10 +131,10 @@
 			"characterImage" : "/humanoid/wr/vaporeon/icon.png"
 		}
 	],
-	"baseColorMap" : {
+	"baseColorPalette" : {
 		"primary" : ["0d4f6a", "1b80a7", "42b2dd", "6dc4e5"], // main body
 		"secondary" : ["0b2e67", "194893", "2d66c3"], // dorsal fins
-		"underbelly" : ["8a8a8a", "b3b3b3", "e0e0e0", "fefefe"],
+		"tertiary" : ["8a8a8a", "b3b3b3", "e0e0e0", "fefefe"],
 		"earFins" : ["786c31", "b1a14e", "dcca6b", "f2eab4", "fdf9e3"],
 		"neckFins" : ["a34c9a", "cc72c3", "ef99e7", "ffcfe9", "fae2ef"],
 		"flesh" : ["7a235a", "99457a", "a2668c"]
@@ -142,7 +142,7 @@
 	"charGenTextLabels" : [
 		"Primary Color", // body color
 		"-", // hair type
-		"Underbelly Color", // shirt
+		"tertiary Color", // shirt
 		"Ear Finn Color", // pants
 		"Dorsal Finn Color", // alt option - undy color - facial mask
 		"Neck Finn Style", // head option - hair color - facial hair
@@ -156,7 +156,7 @@
 	"hair" : [
 		"0"
 	],
-	"shirt" : [ // underbelly
+	"shirt" : [ // tertiary
 		"?replace;8a8a8a=cc72c2;b3b3b3=ef99e6;e0e0e0=ffcfe8;fefefe=fae2ee", // light pink
 		"?replace;8a8a8a=986943;b3b3b3=dca76a;e0e0e0=f2d4b5;fefefe=fae9d8", // orange cream
 		"?replace;8a8a8a=b1a14f;b3b3b3=dcca6c;e0e0e0=f2eab5;fefefe=fdf9e4", // light yellow
@@ -262,7 +262,7 @@
 
 	"colorRemapGlobalTags" : {
 		"bellyColorRemap" :  [
-			["primary","underbelly"]
+			["primary","tertiary"]
 		],
 		"pussyColorRemap" : [
 			["flesh","flesh"]
@@ -271,13 +271,13 @@
 			["primary","flesh"]
 		],
 		"ballsColorRemap" : [
-			["primary","underbelly"]
+			["primary","tertiary"]
 		],
 		"breastsColorRemap" : [
-			["primary","underbelly"],
-			["primary_180","underbelly"],
+			["primary","tertiary"],
+			["primary_180","tertiary"],
 			["flesh","flesh", {"nipplesVisible":true}],
-			["flesh","underbelly", {"nipplesVisible":false}]
+			["flesh","tertiary", {"nipplesVisible":false}]
 		]
 	},
 	"potionImagePath" : "/humanoid/wr/vaporeon/potion/",

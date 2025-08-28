@@ -166,7 +166,7 @@
 			"facialMask" : [ "blank","blank","blank","blank","blank","blank","blank", "0","0","0","0","0","0","0", "1","1","1","1","1","1","1", "2","2","2","2","2","2","2" ]
 		}
 	],
-	"baseColorMap" : {
+	"baseColorPalette" : {
 		"primary" : ["a0b686","c3daa5","ddf2bf","e9fcce"], // light green
 		"secondary" : ["1c421e","265529","2d6231"], // green
 		"tertiary" : ["131c10","1a2617","23311f"], // dark green
