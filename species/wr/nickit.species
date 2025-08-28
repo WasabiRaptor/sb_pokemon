@@ -19,7 +19,8 @@
 			"globalTagDefaults" : {},
 			"includes" : [
 				"/humanoid/opensb/humanoid.animation",
-				"/humanoid/wr/layered_emote.animation"
+				"/humanoid/wr/layered_emote.animation",
+				"/humanoid/wr/nickit/tail.animation"
 			],
 			"animatedParts" : {
 				"stateTypes" : {},
