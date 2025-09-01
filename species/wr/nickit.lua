@@ -32,7 +32,7 @@ function create(name, species, genderIndex, furColor, hairColor, pawsColor, hair
         species = species,
         gender = speciesConfig.genders[genderIndex+1].name,
         hairGroup = "hair",
-        hairType = speciesConfig.hairStyle[eyeColor+1],
+        hairType = speciesConfig.hairStyle[hairStyle+1],
         hairDirectives = directives,
         bodyDirectives = directives,
         emoteDirectives = directives,
