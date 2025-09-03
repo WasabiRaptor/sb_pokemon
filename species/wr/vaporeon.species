@@ -11,7 +11,8 @@
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
 	"statusEffects" : [ { "stat":"breathProtection", "amount":1} ],
-	"humanoidConfig" : "/humanoid/wr/quadruped.config",
+	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
+	"buildScripts" : ["/humanoid/opensb/build.lua"],
 	"humanoidOverrides" : {
 		"particleEmitters": {
 			"deathPoof" : {

@@ -1,8 +1,8 @@
 {
 	"globalTagDefaults" : {
 		"emoteFrameset" : "emote/emote.png",
-		"emoteFrontFrameset" : "emote/emote_fg.png",
-		"emoteBackFrameset" : "emote/emote_bg.png"
+		"emoteFrontFrameset" : "emote/emoteFront.png",
+		"emoteBackFrameset" : "emote/emoteBack.png"
 	},
 	"animatedParts" : {
 		"parts" : {
@@ -11,7 +11,6 @@
 					"centered": true,
 					"zLevel": 7,
 					"anchorPart": "head",
-					"bodyFullbright" : true,
 					"processingDirectives" : "<emoteDirectives>"
 				},
 				"partStates": {
@@ -38,12 +37,11 @@
 					}
 				}
 			},
-			"emote_bg": {
+			"emoteBack": {
 				"properties": {
 					"centered": true,
 					"zLevel": 5.9,
 					"anchorPart": "head",
-					"bodyFullbright" : true,
 					"processingDirectives" : "<emoteDirectives>"
 				},
 				"partStates": {
@@ -70,12 +68,11 @@
 					}
 				}
 			},
-			"emote_fg": {
+			"emoteFront": {
 				"properties": {
 					"centered": true,
 					"zLevel": 14.1,
 					"anchorPart": "head",
-					"bodyFullbright" : true,
 					"processingDirectives" : "<emoteDirectives>"
 				},
 				"partStates": {

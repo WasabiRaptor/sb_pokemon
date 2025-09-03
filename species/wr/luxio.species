@@ -1,185 +1,183 @@
 {
-  "kind" : "wr/luxio",
-  "charCreationTooltip" : {
-    "title" : "Luxio",
-    "subTitle" : "Ne",
-    "description" : "[TODO] Luxio"
-  },
+	"kind" : "wr/luxio",
+	"charCreationTooltip" : {
+		"title" : "Luxio",
+		"subTitle" : "Ne",
+		"description" : "[TODO] Luxio"
+	},
 
-  "statusEffects" : [ "novakidglow", "speciesAnimOverride" ],
-//  "humanoidOverrides" : {
-//    "bodyFullbright" : true
-//  },
+	"statusEffects" : [ "novakidglow", "speciesAnimOverride" ],
 
-	"humanoidConfig" : "/humanoid/wr/quadruped.config",
-  "humanoidOverrides" : {
-    "particleEmitters": {
-      "deathPoof" : {
-        "particles" : [
-          {
-            "particle" : {
-              "type" : "animated",
-              "animation" : "/animations/playerdeath-luxio/playerdeath.animation",
-              "size" : 1,
-              "angularVelocity" : 0,
-              "fade" : 1,
-              "destructionTime" : 1,
-              "position" : [0, 0],
-              "initialVelocity" : [0, 0],
-              "finalVelocity" : [0, 0],
-              "approach" : [1, 1],
-              "timeToLive" : 1.0,
-              "layer" : "middle"
-            }
-          }
-        ]
-      }
-    }
-  },
-  "nameGen" : [ "/species/wr/luxiomalenamegen.config:names", "/species/wr/luxiofemalenamegen.config:names" ],
-  "ouchNoises" : [ "/sfx/luxio/luxiohurt.ogg", "/sfx/luxio/luxiohurt.ogg" ],
-  "charGenTextLabels" : [ "Main colors", "-", "Collar", "Clothes", "Hair shape", "Accent color", "Collar color", "Clothes color", "LUXIO", "Personality" ],
-  "skull" : "/humanoid/luxio/dead.png",
-  "effectDirectives" : "?replace=FEFFFFFF=DCC6FFFF?replace=9bd4ffFF=B168FBFF?replace=31a6ffFF=9529FFFF",
-  "defaultBlueprints" : {
-    "tier1" : [
-      // Empty Hands
-      { "item" : "flagluxio" },
-      // Anvil
-      { "item" : "luxiotier1head" },
-      { "item" : "luxiotier1chest" },
-      { "item" : "luxiotier1pants" },
-      { "item" : "luxiotier2head" },
-      { "item" : "luxiotier2chest" },
-      { "item" : "luxiotier2pants" },
-      { "item" : "ironshortsword" },
-      { "item" : "ironbroadsword" },
-      { "item" : "tungstenaxe" },
-      { "item" : "tungstenhammer" },
-      { "item" : "ironrevolver" },
-      { "item" : "ironassaultrifle" },
-      { "item" : "tungstenmagnum" },
-      { "item" : "tungstenshotgun" },
-      // Anvil2
-      { "item" : "luxiotier3head" },
-      { "item" : "luxiotier3chest" },
-      { "item" : "luxiotier3pants" },
-      { "item" : "luxiotier4head" },
-      { "item" : "luxiotier4chest" },
-      { "item" : "luxiotier4pants" },
-      { "item" : "titaniumdagger" },
-      { "item" : "titaniumspear" },
-      { "item" : "durasteelbroadsword" },
-      { "item" : "durasteelshortsword" },
-      { "item" : "titaniummachinepistol" },
-      { "item" : "titaniumsniperrifle" },
-      { "item" : "durasteelrevolver" },
-      { "item" : "durasteelassaultrifle" },
-      // Anvil3
-      { "item" : "luxiotier5ahead" },
-      { "item" : "luxiotier5achest" },
-      { "item" : "luxiotier5apants" },
-      { "item" : "luxiotier6ahead" },
-      { "item" : "luxiotier6achest" },
-      { "item" : "luxiotier6apants" },
-      { "item" : "luxiotier5mhead" },
-      { "item" : "luxiotier5mchest" },
-      { "item" : "luxiotier5mpants" },
-      { "item" : "luxiotier6mhead" },
-      { "item" : "luxiotier6mchest" },
-      { "item" : "luxiotier6mpants" },
-      { "item" : "luxiotier5shead" },
-      { "item" : "luxiotier5schest" },
-      { "item" : "luxiotier5spants" },
-      { "item" : "luxiotier6shead" },
-      { "item" : "luxiotier6schest" },
-      { "item" : "luxiotier6spants" },
-      { "item" : "aegisaltpistol" },
-      { "item" : "aegisaltbow" },
-      { "item" : "feroziumwand" },
-      { "item" : "feroziumstaff" },
-      { "item" : "violiumshortsword" },
-      { "item" : "violiumbroadsword" },
-      // Furniture Table 2
-      //{ "item" : "luxiostoragelocker" },
-      { "item" : "luxioshipdoor" },
-      { "item" : "luxioshiphatch" },
-      //{ "item" : "luxiobed" },
-      // Spinning Wheel
+	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
+	"buildScripts" : ["/humanoid/opensb/build.lua"],
+	"humanoidOverrides" : {
+		"particleEmitters": {
+			"deathPoof" : {
+				"particles" : [
+					{
+						"particle" : {
+							"type" : "animated",
+							"animation" : "/animations/playerdeath-luxio/playerdeath.animation",
+							"size" : 1,
+							"angularVelocity" : 0,
+							"fade" : 1,
+							"destructionTime" : 1,
+							"position" : [0, 0],
+							"initialVelocity" : [0, 0],
+							"finalVelocity" : [0, 0],
+							"approach" : [1, 1],
+							"timeToLive" : 1.0,
+							"layer" : "middle"
+						}
+					}
+				]
+			}
+		}
+	},
+	"nameGen" : [ "/species/wr/luxiomalenamegen.config:names", "/species/wr/luxiofemalenamegen.config:names" ],
+	"ouchNoises" : [ "/sfx/luxio/luxiohurt.ogg", "/sfx/luxio/luxiohurt.ogg" ],
+	"charGenTextLabels" : [ "Main colors", "-", "Collar", "Clothes", "Hair shape", "Accent color", "Collar color", "Clothes color", "LUXIO", "Personality" ],
+	"skull" : "/humanoid/luxio/dead.png",
+	"effectDirectives" : "?replace=FEFFFFFF=DCC6FFFF?replace=9bd4ffFF=B168FBFF?replace=31a6ffFF=9529FFFF",
+	"defaultBlueprints" : {
+		"tier1" : [
+			// Empty Hands
+			{ "item" : "flagluxio" },
+			// Anvil
+			{ "item" : "luxiotier1head" },
+			{ "item" : "luxiotier1chest" },
+			{ "item" : "luxiotier1pants" },
+			{ "item" : "luxiotier2head" },
+			{ "item" : "luxiotier2chest" },
+			{ "item" : "luxiotier2pants" },
+			{ "item" : "ironshortsword" },
+			{ "item" : "ironbroadsword" },
+			{ "item" : "tungstenaxe" },
+			{ "item" : "tungstenhammer" },
+			{ "item" : "ironrevolver" },
+			{ "item" : "ironassaultrifle" },
+			{ "item" : "tungstenmagnum" },
+			{ "item" : "tungstenshotgun" },
+			// Anvil2
+			{ "item" : "luxiotier3head" },
+			{ "item" : "luxiotier3chest" },
+			{ "item" : "luxiotier3pants" },
+			{ "item" : "luxiotier4head" },
+			{ "item" : "luxiotier4chest" },
+			{ "item" : "luxiotier4pants" },
+			{ "item" : "titaniumdagger" },
+			{ "item" : "titaniumspear" },
+			{ "item" : "durasteelbroadsword" },
+			{ "item" : "durasteelshortsword" },
+			{ "item" : "titaniummachinepistol" },
+			{ "item" : "titaniumsniperrifle" },
+			{ "item" : "durasteelrevolver" },
+			{ "item" : "durasteelassaultrifle" },
+			// Anvil3
+			{ "item" : "luxiotier5ahead" },
+			{ "item" : "luxiotier5achest" },
+			{ "item" : "luxiotier5apants" },
+			{ "item" : "luxiotier6ahead" },
+			{ "item" : "luxiotier6achest" },
+			{ "item" : "luxiotier6apants" },
+			{ "item" : "luxiotier5mhead" },
+			{ "item" : "luxiotier5mchest" },
+			{ "item" : "luxiotier5mpants" },
+			{ "item" : "luxiotier6mhead" },
+			{ "item" : "luxiotier6mchest" },
+			{ "item" : "luxiotier6mpants" },
+			{ "item" : "luxiotier5shead" },
+			{ "item" : "luxiotier5schest" },
+			{ "item" : "luxiotier5spants" },
+			{ "item" : "luxiotier6shead" },
+			{ "item" : "luxiotier6schest" },
+			{ "item" : "luxiotier6spants" },
+			{ "item" : "aegisaltpistol" },
+			{ "item" : "aegisaltbow" },
+			{ "item" : "feroziumwand" },
+			{ "item" : "feroziumstaff" },
+			{ "item" : "violiumshortsword" },
+			{ "item" : "violiumbroadsword" },
+			// Furniture Table 2
+			//{ "item" : "luxiostoragelocker" },
+			{ "item" : "luxioshipdoor" },
+			{ "item" : "luxioshiphatch" },
+			//{ "item" : "luxiobed" },
+			// Spinning Wheel
 
-      // Spinning Wheel 2
-      { "item" : "luxiomannequin" }
-    ]
-  },
-  "altOptionAsFacialMask" : true,
-  "altOptionAsUndyColor" : true,
-  "headOptionAsHairColor" : true,
-  "bodyColorAsFacialMaskSubColor": true,
-  "hairColorAsBodySubColor": true,
-  "genders" : [
-    {
-      "name" : "male",
-      "image" : "/interface/title/male.png",
-      "characterImage" : "/interface/title/luxiomale.png",
-      "hair" : ["blank"], // the 'hair' is technically facial hair so that it goes in front of the body
-      "shirt" : [ "maskchest" ],
-      "pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
-      "facialHairGroup" : "",
-      "facialHair" : [],
-      "facialMaskGroup" : "malehair",
-      "facialMask" : ["1", "2", "3", "4"]
-    },
-    {
-      "name" : "female",
-      "image" : "/interface/title/female.png",
-      "characterImage" : "/interface/title/luxiofemale.png",
-      "hair" : ["blank"],
-      "shirt" : [ "maskchest" ],
-      "pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
-      "facialHairGroup" : "",
-      "facialHair" : [],
-      "facialMaskGroup" : "femalehair",
-      "facialMask" : ["1", "2", "3", "4"]
-    }
-  ],
+			// Spinning Wheel 2
+			{ "item" : "luxiomannequin" }
+		]
+	},
+	"altOptionAsFacialMask" : true,
+	"altOptionAsUndyColor" : true,
+	"headOptionAsHairColor" : true,
+	"bodyColorAsFacialMaskSubColor": true,
+	"hairColorAsBodySubColor": true,
+	"genders" : [
+		{
+			"name" : "male",
+			"image" : "/interface/title/male.png",
+			"characterImage" : "/interface/title/luxiomale.png",
+			"hair" : ["blank"], // the 'hair' is technically facial hair so that it goes in front of the body
+			"shirt" : [ "maskchest" ],
+			"pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
+			"facialHairGroup" : "",
+			"facialHair" : [],
+			"facialMaskGroup" : "malehair",
+			"facialMask" : ["1", "2", "3", "4"]
+		},
+		{
+			"name" : "female",
+			"image" : "/interface/title/female.png",
+			"characterImage" : "/interface/title/luxiofemale.png",
+			"hair" : ["blank"],
+			"shirt" : [ "maskchest" ],
+			"pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
+			"facialHairGroup" : "",
+			"facialHair" : [],
+			"facialMaskGroup" : "femalehair",
+			"facialMask" : ["1", "2", "3", "4"]
+		}
+	],
 
-  "bodyColor" : [
-    {"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "363636", "454545": "454545", "232323": "232323"},
-    {"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "363636", "454545": "454545", "232323": "232323"},
-    {"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-    {"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-    {"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
-    {"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
-    {"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
-    {"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
-    {"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-    {"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-    {"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-    {"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-    {"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "363636", "454545": "454545", "232323": "232323"},
-    {"57a3b9": "c16f28", "70b9cf": "ec8839", "418093": "a05814", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-    {"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-    {"57a3b9": "c7c7c7", "70b9cf": "dcdcdc", "418093": "afafaf", "363636": "626262", "454545": "7a7a7a", "232323": "424242"},
-    {"57a3b9": "709b23", "70b9cf": "7dad27", "418093": "56771a", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-    {"57a3b9": "784116", "70b9cf": "90501e", "418093": "653610", "363636": "1d1d1d", "454545": "282828", "232323": "000000"}
-  ],
+	"bodyColor" : [
+		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "363636", "454545": "454545", "232323": "232323"},
+		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "363636", "454545": "454545", "232323": "232323"},
+		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
+		{"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
+		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
+		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
+		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
+		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
+		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
+		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
+		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
+		{"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
+		{"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "363636", "454545": "454545", "232323": "232323"},
+		{"57a3b9": "c16f28", "70b9cf": "ec8839", "418093": "a05814", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
+		{"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
+		{"57a3b9": "c7c7c7", "70b9cf": "dcdcdc", "418093": "afafaf", "363636": "626262", "454545": "7a7a7a", "232323": "424242"},
+		{"57a3b9": "709b23", "70b9cf": "7dad27", "418093": "56771a", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
+		{"57a3b9": "784116", "70b9cf": "90501e", "418093": "653610", "363636": "1d1d1d", "454545": "282828", "232323": "000000"}
+	],
 
-  "undyColor" : [ {}
-    // would make ears blue vs black, but the color replacements go in the wrong order
-    // {"57a4b9": "57a3b9", "70bacf": "70b9cf", "418193": "418093"},
-    // {"57a4b9": "363636", "70bacf": "454545", "418193": "232323"}
-  ],
+	"undyColor" : [ {}
+		// would make ears blue vs black, but the color replacements go in the wrong order
+		// {"57a4b9": "57a3b9", "70bacf": "70b9cf", "418193": "418093"},
+		// {"57a4b9": "363636", "70bacf": "454545", "418193": "232323"}
+	],
 
-  "hairColor" : [
-    {"c39839": "c39839FB", "efbc46": "efbc46FB", "9a7627": "9a7627FB"},
-    {"c39839": "c3b239FB", "efbc46": "efda46FB", "9a7627": "9a8827FB"},
-    {"c39839": "c16f28FB", "efbc46": "ec8839FB", "9a7627": "a05814FB"},
-    {"c39839": "c14628FB", "efbc46": "ec5f39FB", "9a7627": "a03014FB"},
-    {"c39839": "c1283eFB", "efbc46": "ec3955FB", "9a7627": "a01430FB"},
-    {"c39839": "7e28c1FB", "efbc46": "9739ecFB", "9a7627": "5a14a0FB"},
-    {"c39839": "57a3b9FB", "efbc46": "70b9cfFB", "9a7627": "418093FB"},
-    {"c39839": "63c128FB", "efbc46": "8bec39FB", "9a7627": "5aa014FB"},
-    {"c39839": "784116FB", "efbc46": "90501eFB", "9a7627": "653610FB"},
-    {"c39839": "c7c7c7FB", "efbc46": "dcdcdcFB", "9a7627": "afafafFB"}
-  ]
+	"hairColor" : [
+		{"c39839": "c39839FB", "efbc46": "efbc46FB", "9a7627": "9a7627FB"},
+		{"c39839": "c3b239FB", "efbc46": "efda46FB", "9a7627": "9a8827FB"},
+		{"c39839": "c16f28FB", "efbc46": "ec8839FB", "9a7627": "a05814FB"},
+		{"c39839": "c14628FB", "efbc46": "ec5f39FB", "9a7627": "a03014FB"},
+		{"c39839": "c1283eFB", "efbc46": "ec3955FB", "9a7627": "a01430FB"},
+		{"c39839": "7e28c1FB", "efbc46": "9739ecFB", "9a7627": "5a14a0FB"},
+		{"c39839": "57a3b9FB", "efbc46": "70b9cfFB", "9a7627": "418093FB"},
+		{"c39839": "63c128FB", "efbc46": "8bec39FB", "9a7627": "5aa014FB"},
+		{"c39839": "784116FB", "efbc46": "90501eFB", "9a7627": "653610FB"},
+		{"c39839": "c7c7c7FB", "efbc46": "dcdcdcFB", "9a7627": "afafafFB"}
+	]
 }
