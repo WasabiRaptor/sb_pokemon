@@ -514,33 +514,6 @@
 					"zLevel" : 6
 				}
 			},
-			"hair": {
-				"properties": {
-					"centered": true,
-					"zLevel": 7,
-					"anchorPart": "head",
-					"processingDirectives" : "<hairDirectives><helmetMaskDirectives>"
-				},
-				"partStates": {
-					"body": {
-						"idle": { "properties": { "image": "<humanoidPath><hairFrameset>:normal" } },
-						"duck": "idle",
-						"sit": "idle",
-						"lay": "idle",
-						"walk": "idle",
-						"run": "idle",
-						"runbackwards": "idle",
-						"jump": "idle",
-						"fall": "idle",
-						"swim": "idle",
-						"swimIdle": "idle"
-					},
-					"portraitMode" : {
-						"head": { "properties":{"image" : "<humanoidPath><hairFrameset>:normal<portraitMask>"}},
-						"bust" : "head"
-					}
-				}
-			},
 
 			"backCosmetic" : { // this is merely a part for the generated cosmetic parts to anchor to
 				"properties" : {
@@ -739,10 +712,37 @@
 					"zLevel": 14
 				}
 			},
-			"facialHair": {
+			"hair": {
 				"properties": {
 					"centered": true,
 					"zLevel": 15,
+					"anchorPart": "head",
+					"processingDirectives" : "<hairDirectives><helmetMaskDirectives>"
+				},
+				"partStates": {
+					"body": {
+						"idle": { "properties": { "image": "<humanoidPath><hairFrameset>:normal" } },
+						"duck": "idle",
+						"sit": "idle",
+						"lay": "idle",
+						"walk": "idle",
+						"run": "idle",
+						"runbackwards": "idle",
+						"jump": "idle",
+						"fall": "idle",
+						"swim": "idle",
+						"swimIdle": "idle"
+					},
+					"portraitMode" : {
+						"head": { "properties":{"image" : "<humanoidPath><hairFrameset>:normal<portraitMask>"}},
+						"bust" : "head"
+					}
+				}
+			},
+			"facialHair": {
+				"properties": {
+					"centered": true,
+					"zLevel": 16,
 					"anchorPart": "head",
 					"processingDirectives" : "<facialHairDirectives><helmetMaskDirectives>"
 				},
@@ -769,7 +769,7 @@
 			"facialMask": {
 				"properties": {
 					"centered": true,
-					"zLevel": 16,
+					"zLevel": 17,
 					"anchorPart": "head",
 					"processingDirectives" : "<facialMaskDirectives><helmetMaskDirectives>"
 				},
@@ -796,13 +796,13 @@
 
 			"emoteFront": {
 				"properties": {
-					"zLevel": 17
+					"zLevel": 18
 				}
 			},
 			"frontArm": {
 				"properties": {
 					"centered": true,
-					"zLevel": 18,
+					"zLevel": 19,
 					"transformationGroups": [],
 					"anchorPart" : "head",
 					"processingDirectives" : "<bodyDirectives>",
@@ -904,7 +904,7 @@
 			"frontHandItem":{
 				"properties" : {
 					"centered": true,
-					"zLevel": 18,
+					"zLevel": 19,
 					"anchorPart" : "frontArm",
 					"transformationGroups": ["frontHandItemRotation"]
 				}
@@ -913,7 +913,7 @@
 			"forelegFront": {
 				"properties": {
 					"centered": true,
-					"zLevel": 19,
+					"zLevel": 20,
 					"transformationGroups": [],
 					"anchorPart": "anchor",
 					"processingDirectives" : "<bodyDirectives>"
@@ -947,14 +947,14 @@
 				"properties" : {
 					"centered": true,
 					"anchorPart" : "forelegFront",
-					"zLevel" : 20
+					"zLevel" : 21
 				}
 			},
 
 			"hindlegFront": {
 				"properties": {
 					"centered": true,
-					"zLevel": 21,
+					"zLevel": 22,
 					"transformationGroups": [],
 					"anchorPart": "anchor",
 					"processingDirectives" : "<bodyDirectives>"
@@ -988,7 +988,7 @@
 				"properties" : {
 					"centered": true,
 					"anchorPart" : "hindlegFront",
-					"zLevel" : 22
+					"zLevel" : 23
 				}
 			}
 
