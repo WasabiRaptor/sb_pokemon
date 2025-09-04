@@ -62,7 +62,7 @@
 						"tailOffset" : [["reset"],	["scale",[-1,1]],	["translate",[-0.125,0]]]
 					} },
 					"lay": { "frames": 1, "cycle": 0, "mode": "end", "properties" : {
-						"movementOffset" :  [["reset"],	["translate",[0, -1.875]]]
+						"movementOffset" :  [["reset"],	["translate",[0, -0.875]]]
 					} },
 
 					"walk": { "frames": 8, "cycle": 0.75, "mode": "loop", "properties" : {
