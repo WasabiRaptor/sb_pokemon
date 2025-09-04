@@ -28,8 +28,7 @@
 						"blink": "idle",
 						"wink": "idle",
 						"eat": "idle",
-						"sleep": "idle",
-						"none": { "properties": {} }
+						"sleep": "idle"
 					},
 					"portraitMode" : {
 						"head": { "properties": { "image": "<humanoidPath><emoteFrameset>:<emote_state>.<emote_frame>?addmask=/humanoid/portraitMask.png;0;0" } },
@@ -59,8 +58,7 @@
 						"blink": "idle",
 						"wink": "idle",
 						"eat": "idle",
-						"sleep": "idle",
-						"none": { "properties": {} }
+						"sleep": "idle"
 					},
 					"portraitMode" : {
 						"head": { "properties": { "image": "<humanoidPath><emoteBackFrameset>:<emote_state>.<emote_frame>?addmask=/humanoid/portraitMask.png;0;0" } },
@@ -90,8 +88,7 @@
 						"blink": "idle",
 						"wink": "idle",
 						"eat": "idle",
-						"sleep": "idle",
-						"none": { "properties": {} }
+						"sleep": "idle"
 					},
 					"portraitMode" : {
 						"head": { "properties": { "image": "<humanoidPath><emoteFrontFrameset>:<emote_state>.<emote_frame>?addmask=/humanoid/portraitMask.png;0;0" } },

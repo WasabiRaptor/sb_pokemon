@@ -10,6 +10,9 @@
 
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
 	"buildScripts" : ["/humanoid/opensb/build.lua"],
+	"baseColorPalette" : {
+
+	},
 	"humanoidOverrides" : {
 		"particleEmitters": {
 			"deathPoof" : {
