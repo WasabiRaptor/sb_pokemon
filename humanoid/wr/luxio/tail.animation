@@ -17,10 +17,9 @@
 				"properties": {
 					"centered": true,
 					"zLevel": 8.1,
-					"offset" : [-1.3125,-1.0625],
-
 					"anchorPart" : "body",
-					"transformationGroups": ["movementOffset", "tailOffset"],
+					"transformationGroups" : ["tailOffset"],
+					"offset" : [-1.875,-0.5],
 					"processingDirectives" : "<bodyDirectives>",
 					"interact" : [-1,0]
 				},
@@ -28,14 +27,15 @@
 					"body": {
 						"idle": { "properties": { "image": "<tailFrameset>:<tailState_state>.<tailState_frame>" } },
 						"walk": { "properties": { "image": "<tailFrameset>:<body_state>.<body_frame>" } },
-						"run": "walk",
+						"run": { "properties": { "image": "<tailFrameset>:run.<body_frame>" } },
+						"runbackwards" : "run",
 						"jump": "walk",
 						"fall": "walk",
 						"duck": "idle",
-						"swim": "idle",
-						"swimIdle" : "idle",
-						"sit" : "idle",
-						"lay" : "idle"
+						"swim": "walk",
+						"swimIdle" : "walk",
+						"sit": "walk",
+						"lay": "walk"
 					},
 					"tailState": {
 					},

@@ -6,12 +6,17 @@
 		"description" : "[TODO] Luxio"
 	},
 
-	"statusEffects" : [ "novakidglow", "speciesAnimOverride" ],
+	"statusEffects" : [ "novakidglow" ],
 
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
 	"buildScripts" : ["/humanoid/opensb/build.lua"],
-	"baseColorPalette" : {
+	"createScripts" : ["/species/wr/luxio.lua"],
 
+	"baseColorPalette" : {
+		"primary" : ["418093","57a3b9","70b9cf"],
+		"secondary" : ["232323","363636","454545"],
+		"eyes" : ["9a7627","c39839","efbc46"],
+		"flesh" : ["9a7627","c39839","efbc46"]
 	},
 	"humanoidOverrides" : {
 		"particleEmitters": {
@@ -39,9 +44,80 @@
 	},
 	"nameGen" : [ "/species/wr/luxiomalenamegen.config:names", "/species/wr/luxiofemalenamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/luxio/luxiohurt.ogg", "/sfx/luxio/luxiohurt.ogg" ],
-	"charGenTextLabels" : [ "Main colors", "-", "Collar", "Clothes", "Hair shape", "Accent color", "Collar color", "Clothes color", "LUXIO", "Personality" ],
 	"skull" : "/humanoid/luxio/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=DCC6FFFF?replace=9bd4ffFF=B168FBFF?replace=31a6ffFF=9529FFFF",
+	"charGenTextLabels" : [
+		"Fur Color", // body color
+		"Eye Color", // hair type
+		"Ear Color", // shirt
+		"-", // pants
+
+		"Fluff Color", // alt option - undy color - facial mask
+		"Fluff Style", // head option - hair color - facial hair
+		"-", // shirt color
+		"-", // pants color
+
+		"Luxio", // species
+		"Personality" // personality
+	],
+
+	"genders" : [
+		{
+			"name" : "male",
+			"image" : "/interface/title/male.png",
+			"characterImage" : "/interface/title/luxiomale.png",
+			"hairGroup" : "malehair"
+		},
+		{
+			"name" : "female",
+			"image" : "/interface/title/female.png",
+			"characterImage" : "/interface/title/luxiofemale.png",
+			"hairGroup" : "femalehair"
+		}
+	],
+	"fluffStyle": [
+		"1",
+		"2",
+		"3"
+	],
+	"furColor" : [
+		"?replace;57a3b9=57a3b9;70b9cf=70b9cf;418093=418093;",
+		"?replace;57a3b9=57b9b1;70b9cf=70cfc6;418093=41938c;",
+		"?replace;57a3b9=5773b9;70b9cf=708ccf;418093=415a93;",
+		"?replace;57a3b9=6857b9;70b9cf=7d70cf;418093=4c4193;",
+		"?replace;57a3b9=c39838;70b9cf=efbc45;418093=9a7626;",
+		"?replace;57a3b9=c16f28;70b9cf=ec8839;418093=a05814;",
+		"?replace;57a3b9=c7c7c7;70b9cf=dcdcdc;418093=afafaf;",
+		"?replace;57a3b9=709b23;70b9cf=7dad27;418093=56771a;",
+		"?replace;57a3b9=784116;70b9cf=90501e;418093=653610;"
+	],
+	"fluffColor" : [
+		"?replace;363636=363636;454545=454545;232323=232323",
+		"?replace;363636=1d1d1d;454545=282828;232323=000000",
+		"?replace;363636=3b2c85;454545=4b3a9e;232323=2a1e66",
+		"?replace;363636=462469;454545=532c7a;232323=35194f",
+		"?replace;363636=4a2d16;454545=59361a;232323=352011",
+		"?replace;363636=494017;454545=59511a;232323=332c0f",
+		"?replace;363636=626262;454545=7a7a7a;232323=424242"
+	],
+
+	"earColor" : [
+		"?replace;2e9861=57a3b9;42c17f=70b9cf;257c4f=418093",
+		"?replace;2e9861=363636;42c17f=454545;257c4f=232323"
+	],
+
+	"eyeColor" : [
+		"?replace;c39839=c39839FE;efbc46=efbc46FE;9a7627=9a7627FE",
+		"?replace;c39839=c3b239FE;efbc46=efda46FE;9a7627=9a8827FE",
+		"?replace;c39839=c16f28FE;efbc46=ec8839FE;9a7627=a05814FE",
+		"?replace;c39839=c14628FE;efbc46=ec5f39FE;9a7627=a03014FE",
+		"?replace;c39839=c1283eFE;efbc46=ec3955FE;9a7627=a01430FE",
+		"?replace;c39839=7e28c1FE;efbc46=9739ecFE;9a7627=5a14a0FE",
+		"?replace;c39839=57a3b9FE;efbc46=70b9cfFE;9a7627=418093FE",
+		"?replace;c39839=63c128FE;efbc46=8bec39FE;9a7627=5aa014FE",
+		"?replace;c39839=784116FE;efbc46=90501eFE;9a7627=653610FE",
+		"?replace;c39839=c7c7c7FE;efbc46=dcdcdcFE;9a7627=afafafFE"
+	],
 	"defaultBlueprints" : {
 		"tier1" : [
 			// Empty Hands
@@ -111,76 +187,5 @@
 			// Spinning Wheel 2
 			{ "item" : "luxiomannequin" }
 		]
-	},
-	"altOptionAsFacialMask" : true,
-	"altOptionAsUndyColor" : true,
-	"headOptionAsHairColor" : true,
-	"bodyColorAsFacialMaskSubColor": true,
-	"hairColorAsBodySubColor": true,
-	"genders" : [
-		{
-			"name" : "male",
-			"image" : "/interface/title/male.png",
-			"characterImage" : "/interface/title/luxiomale.png",
-			"hair" : ["blank"], // the 'hair' is technically facial hair so that it goes in front of the body
-			"shirt" : [ "maskchest" ],
-			"pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
-			"facialHairGroup" : "",
-			"facialHair" : [],
-			"facialMaskGroup" : "malehair",
-			"facialMask" : ["1", "2", "3", "4"]
-		},
-		{
-			"name" : "female",
-			"image" : "/interface/title/female.png",
-			"characterImage" : "/interface/title/luxiofemale.png",
-			"hair" : ["blank"],
-			"shirt" : [ "maskchest" ],
-			"pants" : [ "maskpants", "luxiokneesocksflat", "luxiokneesocksblackstriped", "luxiokneesockswhitestriped", "luxiokneesocksstripedblack", "luxiokneesocksstripedwhite", "woulditbelikethispants", "orthispants" ],
-			"facialHairGroup" : "",
-			"facialHair" : [],
-			"facialMaskGroup" : "femalehair",
-			"facialMask" : ["1", "2", "3", "4"]
-		}
-	],
-
-	"bodyColor" : [
-		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "363636", "454545": "454545", "232323": "232323"},
-		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "363636", "454545": "454545", "232323": "232323"},
-		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-		{"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
-		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "3b2c85", "454545": "4b3a9e", "232323": "2a1e66"},
-		{"57a3b9": "57b9b1", "70b9cf": "70cfc6", "418093": "41938c", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
-		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "462469", "454545": "532c7a", "232323": "35194f"},
-		{"57a3b9": "57a3b9", "70b9cf": "70b9cf", "418093": "418093", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-		{"57a3b9": "5773b9", "70b9cf": "708ccf", "418093": "415a93", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-		{"57a3b9": "6857b9", "70b9cf": "7d70cf", "418093": "4c4193", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-		{"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "363636", "454545": "454545", "232323": "232323"},
-		{"57a3b9": "c16f28", "70b9cf": "ec8839", "418093": "a05814", "363636": "1d1d1d", "454545": "282828", "232323": "000000"},
-		{"57a3b9": "c39838", "70b9cf": "efbc45", "418093": "9a7626", "363636": "494017", "454545": "59511a", "232323": "332c0f"},
-		{"57a3b9": "c7c7c7", "70b9cf": "dcdcdc", "418093": "afafaf", "363636": "626262", "454545": "7a7a7a", "232323": "424242"},
-		{"57a3b9": "709b23", "70b9cf": "7dad27", "418093": "56771a", "363636": "4a2d16", "454545": "59361a", "232323": "352011"},
-		{"57a3b9": "784116", "70b9cf": "90501e", "418093": "653610", "363636": "1d1d1d", "454545": "282828", "232323": "000000"}
-	],
-
-	"undyColor" : [ {}
-		// would make ears blue vs black, but the color replacements go in the wrong order
-		// {"57a4b9": "57a3b9", "70bacf": "70b9cf", "418193": "418093"},
-		// {"57a4b9": "363636", "70bacf": "454545", "418193": "232323"}
-	],
-
-	"hairColor" : [
-		{"c39839": "c39839FB", "efbc46": "efbc46FB", "9a7627": "9a7627FB"},
-		{"c39839": "c3b239FB", "efbc46": "efda46FB", "9a7627": "9a8827FB"},
-		{"c39839": "c16f28FB", "efbc46": "ec8839FB", "9a7627": "a05814FB"},
-		{"c39839": "c14628FB", "efbc46": "ec5f39FB", "9a7627": "a03014FB"},
-		{"c39839": "c1283eFB", "efbc46": "ec3955FB", "9a7627": "a01430FB"},
-		{"c39839": "7e28c1FB", "efbc46": "9739ecFB", "9a7627": "5a14a0FB"},
-		{"c39839": "57a3b9FB", "efbc46": "70b9cfFB", "9a7627": "418093FB"},
-		{"c39839": "63c128FB", "efbc46": "8bec39FB", "9a7627": "5aa014FB"},
-		{"c39839": "784116FB", "efbc46": "90501eFB", "9a7627": "653610FB"},
-		{"c39839": "c7c7c7FB", "efbc46": "dcdcdcFB", "9a7627": "afafafFB"}
-	]
+	}
 }
