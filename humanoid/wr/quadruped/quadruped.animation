@@ -887,14 +887,14 @@
 				"properties": {
 					"centered": true,
 					"zLevel": 13,
-					"transformationGroups": ["headOffset", "headRotation"],
+					"transformationGroups": ["headRotation", "headOffset"],
 					"anchorPart" : "body",
 					"processingDirectives" : "<bodyDirectives>",
 					"offset" : [0.9375, -0.4375]
 				},
 				"partStates": {
 					"body": {
-						"idle": { "properties": { "image": "<humanoidPath><headFrameset>:normal", "transformationGroups" : ["personalityHeadOffset", "headRotation" ] } },
+						"idle": { "properties": { "image": "<humanoidPath><headFrameset>:normal", "transformationGroups" : ["headRotation", "personalityHeadOffset" ] } },
 						"duck": { "properties": { "image": "<humanoidPath><headFrameset>:normal" } },
 						"sit": "duck",
 						"lay": "duck",
@@ -1400,6 +1400,7 @@
 		"tailOffset" : {"interpolated": false},
 
 		"headRotation": {"interpolated": true},
+		"bodyHeadRotation": {"interpolated": true},
 		"frontArmRotation": {"interpolated": true},
 		"backArmRotation": {"interpolated": true},
 		"frontHandItemRotation": {"interpolated": true},
