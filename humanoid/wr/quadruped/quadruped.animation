@@ -25,6 +25,7 @@
 		"helmetMaskDirectives" : "",
 		"humanoidPath" : "",
 		"portraitMask" : "?addmask=/humanoid/portraitMask.png;0;0",
+		"bodyPortraitMask" : "?addmask=/humanoid/portraitMask.png;6;1",
 
 		"headFrameset" : "malehead.png",
 		"bodyFrameset" : "malebody.png",
@@ -545,7 +546,7 @@
 						"climb.8": { "properties": { "image": "<humanoidPath><hindlegBackFrameset>:<bodyDanceFrame>", "transformationGroups": [] } }
 					},
 					"portraitMode" : {
-						"head": { "properties": { "image": "<humanoidPath><hindlegBackFrameset>:<personalityIdle>?addmask=/humanoid/portraitMask.png;6;1" } },
+						"head": { "properties": { "image": "<humanoidPath><hindlegBackFrameset>:<personalityIdle><bodyPortraitMask>" } },
 						"bust" : "head"
 					}
 				}
@@ -646,7 +647,7 @@
 						"climb.8": { "properties": { "image": "<humanoidPath><forelegBackFrameset>:<bodyDanceFrame>", "transformationGroups": [] } }
 					},
 					"portraitMode" : {
-						"head": { "properties": { "image": "<humanoidPath><forelegBackFrameset>:<personalityIdle>?addmask=/humanoid/portraitMask.png;6;1" } },
+						"head": { "properties": { "image": "<humanoidPath><forelegBackFrameset>:<personalityIdle><bodyPortraitMask>" } },
 						"bust" : "head"
 					}
 				}
@@ -755,7 +756,7 @@
 						"climb.8": { "properties": { "image": "<humanoidPath><forelegBackFrameset>:<bodyDanceFrame>", "transformationGroups": ["movementOffset"] } }
 					},
 					"portraitMode" : {
-						"head": { "properties": { "image": "<humanoidPath><bodyFrameset>:<personalityIdle>?addmask=/humanoid/portraitMask.png;6;1" } },
+						"head": { "properties": { "image": "<humanoidPath><bodyFrameset>:<personalityIdle><bodyPortraitMask>" } },
 						"bust" : "head"
 					}
 				}
@@ -998,16 +999,23 @@
 					}
 				}
 			},
-
 			"emoteFront": {
 				"properties": {
 					"zLevel": 18
 				}
 			},
+			"headCosmetic" : { // this is merely a part for the generated cosmetic parts to anchor to
+				"properties" : {
+					"centered": true,
+					"anchorPart" : "head",
+					"zLevel" : 19
+				}
+			},
+
 			"frontArm": {
 				"properties": {
 					"centered": true,
-					"zLevel": 19,
+					"zLevel": 20,
 					"transformationGroups": [],
 					"anchorPart" : "head",
 					"processingDirectives" : "<bodyDirectives>",
@@ -1109,7 +1117,7 @@
 			"frontHandItem":{
 				"properties" : {
 					"centered": true,
-					"zLevel": 19,
+					"zLevel": 20,
 					"anchorPart" : "frontArm",
 					"transformationGroups": ["frontHandItemRotation"]
 				}
@@ -1118,7 +1126,7 @@
 			"forelegFront": {
 				"properties": {
 					"centered": true,
-					"zLevel": 20,
+					"zLevel": 21,
 					"transformationGroups": [],
 					"anchorPart": "anchor",
 					"processingDirectives" : "<bodyDirectives>"
@@ -1271,7 +1279,7 @@
 					},
 
 					"portraitMode" : {
-						"head": { "properties": { "image": "<humanoidPath><forelegFrontFrameset>:<personalityIdle>?addmask=/humanoid/portraitMask.png;6;1", "zLevel": 11.78 } },
+						"head": { "properties": { "image": "<humanoidPath><forelegFrontFrameset>:<personalityIdle><bodyPortraitMask>", "zLevel": 11.78 } },
 						"bust" : "head"
 					}
 				}
@@ -1280,14 +1288,14 @@
 				"properties" : {
 					"centered": true,
 					"anchorPart" : "forelegFront",
-					"zLevel" : 21
+					"zLevel" : 22
 				}
 			},
 
 			"hindlegFront": {
 				"properties": {
 					"centered": true,
-					"zLevel": 22,
+					"zLevel": 23,
 					"transformationGroups": [],
 					"anchorPart": "anchor",
 					"processingDirectives" : "<bodyDirectives>"
@@ -1373,7 +1381,7 @@
 						"climb.8": { "properties": { "image": "<humanoidPath><hindlegFrontFrameset>:<bodyDanceFrame>", "transformationGroups": [] } }
 					},
 					"portraitMode" : {
-						"head": { "properties": { "image": "<humanoidPath><hindlegFrontFrameset>:<personalityIdle>?addmask=/humanoid/portraitMask.png;6;1" } },
+						"head": { "properties": { "image": "<humanoidPath><hindlegFrontFrameset>:<personalityIdle><bodyPortraitMask>" } },
 						"bust" : "head"
 					}
 				}
@@ -1382,7 +1390,7 @@
 				"properties" : {
 					"centered": true,
 					"anchorPart" : "hindlegFront",
-					"zLevel" : 23
+					"zLevel" : 24
 				}
 			}
 
