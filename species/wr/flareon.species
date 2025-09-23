@@ -13,6 +13,21 @@
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
 	"buildScripts" : ["/humanoid/opensb/build.lua"],
 	"humanoidOverrides" : {
+		"animation" : {
+			"animatedParts" : {
+				"parts" : {
+					"facialHair" : {
+						"properties" : {
+							"anchorPart" : "body",
+							"transformationGroups" : ["headOffset"],
+							"offset" : [0.9375, -0.4375],
+							"zLevel" : 12.9
+						}
+					}
+				}
+			}
+		},
+
 		"particleEmitters": {
 			"deathPoof" : {
 				"particles" : [
