@@ -1,76 +1,80 @@
 -- these are just the names of the variables internally and how they're used on the creation screen, do whatever you want with them here!
 -- but probably put name species and gender as the ones supplied, thats probably a good idea
 -- I've supplied the bare minimum as a template here, do with it what you will
+local function wrap(index, array)
+	if index < #array then return index end
+	return math.fmod(index, #array)
+end
 function create(name, species, genderIndex, furColor, fluffColor, eyeColor, fluffStyle, earColor, shirtColor, pantsChoice, pantsColor, personality, ...)
-    -- these values are zero indexed!
+	-- these values are zero indexed!
 
-    local speciesConfig = root.speciesConfig(species)
-    local humanoidConfig = sb.jsonMerge(root.assetJson(speciesConfig.humanoidConfig or "/humanoid.config"), speciesConfig.humanoidOverrides or {})
+	local speciesConfig = root.speciesConfig(species)
+	local humanoidConfig = sb.jsonMerge(root.assetJson(speciesConfig.humanoidConfig or "/humanoid.config"), speciesConfig.humanoidOverrides or {})
 
 
-    genderIndex = math.fmod(genderIndex, #speciesConfig.genders)
-    local gender = speciesConfig.genders[genderIndex+1]
-    furColor = math.fmod(furColor, #speciesConfig.furColor)
-    eyeColor = math.fmod(eyeColor, #speciesConfig.eyeColor)
-    earColor = math.fmod(earColor, #speciesConfig.earColor)
-    fluffColor = math.fmod(fluffColor, #speciesConfig.fluffColor)
-    fluffStyle = math.fmod(fluffStyle, #speciesConfig.fluffStyle)
-    personality = math.fmod(personality, #humanoidConfig.personalities)
+	genderIndex = wrap(genderIndex, speciesConfig.genders)
+	local gender = speciesConfig.genders[genderIndex+1]
+	furColor = wrap(furColor, speciesConfig.furColor)
+	eyeColor = wrap(eyeColor, speciesConfig.eyeColor)
+	earColor = wrap(earColor, speciesConfig.earColor)
+	fluffColor = wrap(fluffColor, speciesConfig.fluffColor)
+	fluffStyle = wrap(fluffStyle, speciesConfig.fluffStyle)
+	personality = wrap(personality, humanoidConfig.personalities)
 
-    local directives = ""
+	local directives = ""
 
-    directives = directives..(speciesConfig.furColor[furColor+1])
-    directives = directives..(speciesConfig.eyeColor[eyeColor+1])
-    directives = directives..(speciesConfig.fluffColor[fluffColor+1])
+	directives = directives..(speciesConfig.furColor[furColor+1])
+	directives = directives..(speciesConfig.eyeColor[eyeColor+1])
+	directives = directives..(speciesConfig.fluffColor[fluffColor+1])
 
-    local personalityIdle, personalityArmIdle, personalityHeadOffset, personalityArmOffset = table.unpack(humanoidConfig.personalities[personality+1])
+	local personalityIdle, personalityArmIdle, personalityHeadOffset, personalityArmOffset = table.unpack(humanoidConfig.personalities[personality+1])
 
-    local identity = {
-        name = name,
-        species = species,
-        gender = gender.name,
-        hairGroup = gender.hairGroup,
-        hairType = speciesConfig.fluffStyle[fluffStyle+1],
-        hairDirectives = directives,
-        bodyDirectives = directives,
-        emoteDirectives = (speciesConfig.earColor[earColor+1]) .. directives,
-        facialHairGroup = "",
-        facialHairType = "",
-        facialHairDirectives = directives,
-        facialMaskGroup = "",
-        facialMaskType = "",
-        facialMaskDirectives = directives,
-        personalityIdle = personalityIdle,
-        personalityArmIdle = personalityArmIdle,
-        personalityHeadOffset = personalityHeadOffset,
-        personalityArmOffset = personalityArmOffset,
-        color = {51, 117, 237, 255},
-    }
-    local parameters = {
-        choices = { genderIndex, furColor, fluffColor, eyeColor, fluffStyle, earColor, shirtColor, pantsChoice, pantsColor, personality, ... },
-        --this you can do a lot with, see the humanoid build script
-    }
-    local armor = {
-        head = nil,
-        chest = nil,
-        legs = nil,
-        back = nil,
-        headCosmetic = nil,
-        chestCosmetic = nil,
-        legsCosmetic = nil,
-        backCosmetic = nil,
-        cosmetic1 = nil,
-        cosmetic2 = nil,
-        cosmetic3 = nil,
-        cosmetic4 = nil,
-        cosmetic5 = nil,
-        cosmetic6 = nil,
-        cosmetic7 = nil,
-        cosmetic8 = nil,
-        cosmetic9 = nil,
-        cosmetic10 = nil,
-        cosmetic11 = nil,
-        cosmetic12 = nil,
-    }
-    return identity, parameters, armor
+	local identity = {
+		name = name,
+		species = species,
+		gender = gender.name,
+		hairGroup = gender.hairGroup,
+		hairType = speciesConfig.fluffStyle[fluffStyle+1],
+		hairDirectives = directives,
+		bodyDirectives = directives,
+		emoteDirectives = (speciesConfig.earColor[earColor+1]) .. directives,
+		facialHairGroup = "",
+		facialHairType = "",
+		facialHairDirectives = directives,
+		facialMaskGroup = "",
+		facialMaskType = "",
+		facialMaskDirectives = directives,
+		personalityIdle = personalityIdle,
+		personalityArmIdle = personalityArmIdle,
+		personalityHeadOffset = personalityHeadOffset,
+		personalityArmOffset = personalityArmOffset,
+		color = {51, 117, 237, 255},
+	}
+	local parameters = {
+		choices = { genderIndex, furColor, fluffColor, eyeColor, fluffStyle, earColor, shirtColor, pantsChoice, pantsColor, personality, ... },
+		--this you can do a lot with, see the humanoid build script
+	}
+	local armor = {
+		head = nil,
+		chest = nil,
+		legs = nil,
+		back = nil,
+		headCosmetic = nil,
+		chestCosmetic = nil,
+		legsCosmetic = nil,
+		backCosmetic = nil,
+		cosmetic1 = nil,
+		cosmetic2 = nil,
+		cosmetic3 = nil,
+		cosmetic4 = nil,
+		cosmetic5 = nil,
+		cosmetic6 = nil,
+		cosmetic7 = nil,
+		cosmetic8 = nil,
+		cosmetic9 = nil,
+		cosmetic10 = nil,
+		cosmetic11 = nil,
+		cosmetic12 = nil,
+	}
+	return identity, parameters, armor
 end
