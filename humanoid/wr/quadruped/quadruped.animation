@@ -1,7 +1,7 @@
 {
 	"version" : 1,
 	"includes" : [
-		"/humanoid/sbq/layered_emote.animation",
+		"/humanoid/wr/layered_emote.animation",
 		"tail.animation" // relative path watch out! this means any species that uses this must have a tail animation in their species folder
 	],
 	"globalTagDefaults" : {
@@ -111,17 +111,17 @@
 						"headOffset" : [["reset"],	["translate",[0,0.375]]]
 					}, "frameProperties":{
 						"tailOffset" : [
-							[["reset"],	["translate",[-0.125,-0.375]]],
+							[["reset"],	["translate",[0,-0.375]]],
 							[["reset"],	["translate",[0,-0.25]]],
-							[["reset"],	["translate",[0.125,-0.125]]],
-							[["reset"],	["translate",[0.25,0]]]
+							[["reset"],	["translate",[0,-0.125]]],
+							[["reset"],	["translate",[0,0]]]
 						]
 					} },
 					"fall": { "frames": 4, "cycle": 0.25, "mode": "end", "properties" : {
 						"headOffset" : [["reset"],	["translate",[0,0.375]]]
 					}, "frameProperties":{
 						"tailOffset" : [
-							[["reset"],	["translate",[0.25,0]]],
+							[["reset"],	["translate",[0.125,0]]],
 							[["reset"],	["translate",[0.25,0.125]]],
 							[["reset"],	["translate",[0.25,0.25]]],
 							[["reset"],	["translate",[0.25,0.375]]]
