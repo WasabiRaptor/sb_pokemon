@@ -169,7 +169,7 @@
 	],
 	"neckFinnStyle": [
 		"0",
-		"blank"
+		""
 	],
 	"bodyColor": [
 		"?replace;0d4f6a=7d1217;1b80a7=b52335;42b2dd=dc3c4f;6dc4e5=ed576f;", // red

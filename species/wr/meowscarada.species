@@ -150,7 +150,7 @@
 			"facialHairGroup" : "ears",
 			"facialHair" : [ "0" ],
 			"facialMaskGroup" : "mask",
-			"facialMask" : [ "blank","blank","blank","blank","blank","blank","blank", "0","0","0","0","0","0","0", "1","1","1","1","1","1","1", "2","2","2","2","2","2","2" ]
+			"facialMask" : [ "","","","","","","", "0","0","0","0","0","0","0", "1","1","1","1","1","1","1", "2","2","2","2","2","2","2" ]
 		},
 		{
 			"name" : "female",
@@ -163,7 +163,7 @@
 			"facialHairGroup" : "ears",
 			"facialHair" : [ "0" ],
 			"facialMaskGroup" : "mask",
-			"facialMask" : [ "blank","blank","blank","blank","blank","blank","blank", "0","0","0","0","0","0","0", "1","1","1","1","1","1","1", "2","2","2","2","2","2","2" ]
+			"facialMask" : [ "","","","","","","", "0","0","0","0","0","0","0", "1","1","1","1","1","1","1", "2","2","2","2","2","2","2" ]
 		}
 	],
 	"baseColorPalette" : {

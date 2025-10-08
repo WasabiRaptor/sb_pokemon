@@ -1,11 +1,11 @@
 {
-	"kind" : "wr/flareon",
+	"kind" : "wr/absol",
 
 
 	"charCreationTooltip" : {
-		"title" : "Flareon",
-		"subTitle" : "Floofer",
-		"description" : "The floofiest floof."
+		"title" : "Absol",
+		"subTitle" : "Omen",
+		"description" : "The Disaster Pokemon."
 	},
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
@@ -14,18 +14,9 @@
 	"buildScripts" : ["/humanoid/opensb/build.lua"],
 	"humanoidOverrides" : {
 		"animation" : {
-			"animatedParts" : {
-				"parts" : {
-					"facialHair" : {
-						"properties" : {
-							"anchorPart" : "body",
-							"transformationGroups" : ["headOffset"],
-							"offset" : [0.9375, -0.4375],
-							"zLevel" : 12.9,
-							"processingDirectives" : "<facialHairDirectives>"
-						}
-					}
-				}
+			"globalTagDefaults" : {
+				"emoteFrontFrameset" : "",
+				"emoteBackFrameset" : ""
 			}
 		},
 
@@ -57,7 +48,7 @@
 	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
 
 
-	"charGenTextLabels" : [ "Underbelly", "Hair style", "Shirt", "Legwear", "Fur colour", "Floof colour", "Shirt colour", "Legwear colour", "Flareon", "Personality" ],
+	"charGenTextLabels" : [ "Underbelly", "Hair style", "Shirt", "Legwear", "Fur colour", "Floof colour", "Shirt colour", "Legwear colour", "Absol", "Personality" ],
 	"skull" : "/humanoid/human/dead.png",
 	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=ff99e6FF;31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
@@ -145,32 +136,24 @@
 
 	"headOptionAsFacialhair" : true,
 
+	"facialHairGroup" : "horn",
+	"hair" : [ "0" ],
+	"shirt" : [ "sbq_nude_chest" ],
+	"pants" : [ "sbq_nude_legs" ],
+	"facialHair" : [ "0" ],
+	"facialMaskGroup" : "",
+	"facialMask" : [ ],
+
 	"genders" : [
 		{
 			"name" : "male",
 			"image" : "/interface/title/male.png",
-			"characterImage" : "/humanoid/wr/flareon/icon.png",
-			// if you want your OC to have multiple hair types to choose from, you should probably add their names here!
-			"hair" : [ "0" ],
-			"shirt" : [ "sbq_nude_chest" ],
-			"pants" : [ "sbq_nude_legs" ],
-			"facialHairGroup" : "mane",
-			"facialHair" : [ "0" ],
-			"facialMaskGroup" : "",
-			"facialMask" : [ ]
+			"characterImage" : "/humanoid/wr/absol/icon.png"
 		},
 		{
 			"name" : "female",
 			"image" : "/interface/title/female.png",
-			"characterImage" : "/humanoid/wr/flareon/icon.png",
-			// if you want your OC to have multiple hair types to choose from, you should probably add their names here!
-			"hair" : [ "0" ],
-			"shirt" : [ "sbq_nude_chest" ],
-			"pants" : [ "sbq_nude_legs" ],
-			"facialHairGroup" : "mane",
-			"facialHair" : [ "0" ],
-			"facialMaskGroup" : "",
-			"facialMask" : [ ]
+			"characterImage" : "/humanoid/wr/absol/icon.png"
 		}
 	],
 	"baseColorPalette" : {
@@ -270,5 +253,4 @@
 			"beab5a":"292726","dcc97d":"3c3632","f8e8a1":"443c36"
 		}
 	]
-
 }
