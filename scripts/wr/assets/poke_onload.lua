@@ -3,7 +3,8 @@ local races = {
 	"wr/vaporeon",
 	"wr/luxio",
 	"wr/nickit",
-	"wr/meowscarada"
+	"wr/meowscarada",
+	"wr/vulpix"
 }
 local charcreation_patch = {}
 local universe_server_patch = {}
