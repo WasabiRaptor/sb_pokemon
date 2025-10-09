@@ -12,6 +12,7 @@
 
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
 	"buildScripts" : ["/humanoid/opensb/build.lua"],
+	"createScripts" : ["/species/wr/absol.lua"],
 	"humanoidOverrides" : {
 		"animation" : {
 			"globalTagDefaults" : {
@@ -22,10 +23,19 @@
 			},
 			"animatedParts" : {
 				"parts" : {
-					"facialHair" : {
+					"facialMask" : {
 						"properties" : {
 							"flippedZLevel" : 12.9,
 							"zLevel":19.1,
+							"processingDirectives" : "<facialMaskDirectives>"
+						}
+					},
+					"facialHair" : {
+						"properties" : {
+							"anchorPart" : "body",
+							"transformationGroups" : ["headOffset"],
+							"offset" : [0.9375, -0.4375],
+							"zLevel" : 12.9,
 							"processingDirectives" : "<facialHairDirectives>"
 						}
 					}
@@ -38,7 +48,7 @@
 			"facialMaskFrameset" : "<facialMaskGroup>/<facialMaskType>.png",
 
 			"hairFlippedFrameset" : "<hairGroup>/<hairType>_flipped.png",
-			"facialHairFlippedFrameset" : "<facialHairGroup>/<facialHairType>_flipped.png",
+			"facialHairFlippedFrameset" : "<facialHairGroup>/<facialHairType>.png",
 			"facialMaskFlippedFrameset" : "<facialMaskGroup>/<facialMaskType>_flipped.png"
 		},
 
@@ -72,21 +82,10 @@
 
 	"skull" : "/humanoid/human/dead.png",
 	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=ff99e6FF;31a6ffFF=e359b9FF",
-	"altOptionAsUndyColor" : true,
-	"headOptionAsHairColor" : true,
-	"altOptionAsHairColor" : true,
 
-	"hairColorAsBodySubColor" : true,
-
-	"headOptionAsFacialhair" : true,
-
-	"facialHairGroup" : "horn",
 	"hair" : [ "0" ],
-	"shirt" : [ "sbq_nude_chest" ],
-	"pants" : [ "sbq_nude_legs" ],
-	"facialHair" : [ "0" ],
-	"facialMaskGroup" : "",
-	"facialMask" : [ ],
+	"horn" : [ "0" ],
+	"mane" : ["0"],
 
 	"genders" : [
 		{
@@ -102,7 +101,7 @@
 	],
 	"baseColorPalette" : {
 		"primary" : ["b4b4d5","cbd0e6","ebf1fa"], // white fur
-		"secondary" : ["313957","414a6a","525a7b"], // dark fur/claws
+		"secondary" : ["313957","414a6a","525a7b","737bac"], // dark fur/claws
 		"flesh" : ["181e33", "1d253d", "242c47"]
 	},
 	"charGenTextLabels" : [
