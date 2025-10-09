@@ -16,8 +16,30 @@
 		"animation" : {
 			"globalTagDefaults" : {
 				"emoteFrontFrameset" : "",
-				"emoteBackFrameset" : ""
+				"emoteBackFrameset" : "",
+				"emoteFrontFlippedFrameset" : "",
+				"emoteBackFlippedFrameset" : ""
+			},
+			"animatedParts" : {
+				"parts" : {
+					"facialHair" : {
+						"properties" : {
+							"flippedZLevel" : 12.9,
+							"zLevel":19.1,
+							"processingDirectives" : "<facialHairDirectives>"
+						}
+					}
+				}
 			}
+		},
+		"identityFramesetTags" : {
+			"hairFrameset" : "<hairGroup>/<hairType>.png",
+			"facialHairFrameset" : "<facialHairGroup>/<facialHairType>.png",
+			"facialMaskFrameset" : "<facialMaskGroup>/<facialMaskType>.png",
+
+			"hairFlippedFrameset" : "<hairGroup>/<hairType>_flipped.png",
+			"facialHairFlippedFrameset" : "<facialHairGroup>/<facialHairType>_flipped.png",
+			"facialMaskFlippedFrameset" : "<facialMaskGroup>/<facialMaskType>_flipped.png"
 		},
 
 		"particleEmitters": {
@@ -48,9 +70,67 @@
 	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
 
 
-	"charGenTextLabels" : [ "Underbelly", "Hair style", "Shirt", "Legwear", "Fur colour", "Floof colour", "Shirt colour", "Legwear colour", "Absol", "Personality" ],
 	"skull" : "/humanoid/human/dead.png",
 	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=ff99e6FF;31a6ffFF=e359b9FF",
+	"altOptionAsUndyColor" : true,
+	"headOptionAsHairColor" : true,
+	"altOptionAsHairColor" : true,
+
+	"hairColorAsBodySubColor" : true,
+
+	"headOptionAsFacialhair" : true,
+
+	"facialHairGroup" : "horn",
+	"hair" : [ "0" ],
+	"shirt" : [ "sbq_nude_chest" ],
+	"pants" : [ "sbq_nude_legs" ],
+	"facialHair" : [ "0" ],
+	"facialMaskGroup" : "",
+	"facialMask" : [ ],
+
+	"genders" : [
+		{
+			"name" : "male",
+			"image" : "/interface/title/male.png",
+			"characterImage" : "/humanoid/wr/absol/icon.png"
+		},
+		{
+			"name" : "female",
+			"image" : "/interface/title/female.png",
+			"characterImage" : "/humanoid/wr/absol/icon.png"
+		}
+	],
+	"baseColorPalette" : {
+		"primary" : ["b4b4d5","cbd0e6","ebf1fa"], // white fur
+		"secondary" : ["313957","414a6a","525a7b"], // dark fur/claws
+		"flesh" : ["181e33", "1d253d", "242c47"]
+	},
+	"charGenTextLabels" : [
+		"-", // body color
+		"-", // hair type
+		"-", // shirt
+		"-", // pants
+
+		"-", // alt option - undy color - facial mask
+		"-", // head option - hair color - facial hair
+		"-", // shirt color
+		"-", // pants color
+
+		"Absol", // species
+		"Personality" // personality
+	],
+
+	// These are the tables for the replace colors, if your sprites neeed to have their colors replaced, you should probably define those colors here
+	"bodyColor" : [
+		""
+	],
+	"undyColor" : [
+		""
+	],
+	"hairColor" : [
+		""
+	],
+
 	"defaultBlueprints" : {
 		"tier1" : [
 
@@ -127,130 +207,5 @@
 			{ "item" : "workoutchest" },
 			{ "item" : "workoutlegs" }
 		]
-	},
-	"altOptionAsUndyColor" : true,
-	"headOptionAsHairColor" : true,
-	"altOptionAsHairColor" : true,
-
-	"hairColorAsBodySubColor" : true,
-
-	"headOptionAsFacialhair" : true,
-
-	"facialHairGroup" : "horn",
-	"hair" : [ "0" ],
-	"shirt" : [ "sbq_nude_chest" ],
-	"pants" : [ "sbq_nude_legs" ],
-	"facialHair" : [ "0" ],
-	"facialMaskGroup" : "",
-	"facialMask" : [ ],
-
-	"genders" : [
-		{
-			"name" : "male",
-			"image" : "/interface/title/male.png",
-			"characterImage" : "/humanoid/wr/absol/icon.png"
-		},
-		{
-			"name" : "female",
-			"image" : "/interface/title/female.png",
-			"characterImage" : "/humanoid/wr/absol/icon.png"
-		}
-	],
-	"baseColorPalette" : {
-		"primary" : ["b6552c","cc663a","e87c4c"], //orange body
-		"secondary" : ["beab5a","dcc97d","f8e8a1"], // pale yellow mane
-		"tertiary" : ["afb3cd","c8cbdf","eef0ff"], // underbelly
-		"flesh" : ["311d1b", "3f2825", "49312e"]
-	},
-	// These are the tables for the replace colors, if your sprites neeed to have their colors replaced, you should probably define those colors here
-	"bodyColor" : [
-		{ // default
-			"afb3cd":"b6552c","c8cbdf":"cc663a","eef0ff":"e87c4c"
-		},
-		{ // default // pale yellow
-			"afb3cd":"beab5a","c8cbdf":"dcc97d","eef0ff":"f8e8a1"
-		},
-		{ // white underbelly
-			"afb3cd":"afb3cd","c8cbdf":"c8cbdf","eef0ff":"eef0ff"
-		},
-		{ // black underbelly
-			"afb3cd":"292726","c8cbdf":"3c3632","eef0ff":"443c36"
-		},
-
-
-		{ // default // no match
-			"afb3cd":"b6552d","c8cbdf":"cc663b","eef0ff":"e87c4d"
-		},
-		{ // shiny / brown
-			"afb3cd":"967129","c8cbdf":"ab8438","eef0ff":"bd9441"
-		},
-		{ // orange / gen3
-			"afb3cd":"802020","c8cbdf":"d06000","eef0ff":"f88800"
-		},
-		{ // red / gen5
-			"afb3cd":"732119","c8cbdf":"d64252","eef0ff":"f7734a"
-		},
-
-
-		{ // default / pale yellow // no match
-			"afb3cd":"beab5b","c8cbdf":"dcc97e","eef0ff":"f8e8a2"
-		},
-		{ // shiny / also yellow
-			"afb3cd":"beb552","c8cbdf":"d7ce6b","eef0ff":"f4ec89"
-		},
-		{ // yellow / gen3
-			"afb3cd":"a06800","c8cbdf":"e8c808","eef0ff":"f8f838"
-		},
-		{ // pale yellow / gen5
-			"afb3cd":"c5a56b","c8cbdf":"debd8c","eef0ff":"ffefa5"
-		},
-		{ // white/red / gen2
-			"afb3cd":"c17c60","c8cbdf":"ffd4c1","eef0ff":"ffe9e0"
-		}
-	],
-	"undyColor" : [
-		{ // default / orange
-			"b6552c":"b6552c","cc663a":"cc663a","e87c4c":"e87c4c"
-		},
-		{ // shiny / brown
-			"b6552c":"967129","cc663a":"ab8438","e87c4c":"bd9441"
-		},
-		{ // orange / gen3
-			"b6552c":"802020","cc663a":"d06000","e87c4c":"f88800"
-		},
-		{ // red / gen5
-			"b6552c":"732119","cc663a":"d64252","e87c4c":"f7734a"
-		},
-		{ // red / gen2
-			"b6552c":"6d1100","cc663a":"ad2910","e87c4c":"ff5208"
-		},
-
-		{ // black
-			"b6552c":"292726","cc663a":"3c3632","e87c4c":"443c36"
-		}
-	],
-	"hairColor" : [
-		{ // default / pale yellow
-			"beab5a":"beab5a","dcc97d":"dcc97d","f8e8a1":"f8e8a1"
-		},
-		{ // shiny / also yellow
-			"beab5a":"beb552","dcc97d":"d7ce6b","f8e8a1":"f4ec89"
-		},
-		{ // yellow / gen3
-			"beab5a":"a06800","dcc97d":"e8c808","f8e8a1":"f8f838"
-		},
-		{ // pale yellow / gen5
-			"beab5a":"c5a56b","dcc97d":"debd8c","f8e8a1":"ffefa5"
-		},
-		{ // white/red / gen2
-			"beab5a":"c17c60","dcc97d":"ffd4c1","f8e8a1":"ffe9e0"
-		},
-
-		{ // white underbelly
-			"beab5a":"afb3cd","dcc97d":"c8cbdf","f8e8a1":"eef0ff"
-		},
-		{ // black underbelly
-			"beab5a":"292726","dcc97d":"3c3632","f8e8a1":"443c36"
-		}
-	]
+	}
 }
