@@ -168,7 +168,10 @@
 		"secondary" : ["732000","bd4a29","de7329"], // hair color
 		"tertiary" : ["e6c57b","ffde94","ffe6b4"], // underbelly
 		"paws" : ["472700","5a3100","835231"],
-		"flesh" : ["311d1b", "3f2825", "49312e"]
+		"flesh" : ["311d1b", "3f2825", "49312e"],
+		"eyes" : ["291600","ffffff"],
+		"markings" : ["ad4e4e","bd5a5a","e66a6a"],
+		"tailMarkings" : ["910d00","b91000","e21400"]
 	},
 	"charGenTextLabels" : [
 		"Fur Color", // body color
@@ -178,7 +181,7 @@
 
 		"Hair Color", // alt option - undy color - facial mask
 		"Hair Style", // head option - hair color - facial hair
-		"-", // shirt color
+		"Markings", // shirt color
 		"-", // pants color
 
 		"Vulpix", // species
@@ -187,21 +190,59 @@
 	"hairStyle" : [
 		"0"
 	],
-	"hairColor" : [
-		""
+	"hairColor" : [ // secondary
+		"?replace;732000=732000;bd4a29=bd4a29;de7329=de7329;", // default orange
+		"?replace;732000=7a1c23;bd4a29=992f36;de7329=bd4a52;", // default gen2 maroon (gen2 shading)
+		"?replace;732000=b86120;bd4a29=e68843;de7329=fea15c;", // default gen6 orange
+		"?replace;732000=a92206;bd4a29=e63c00;de7329=ff7006;", // default PMD orange
+		"?replace;732000=b84128;bd4a29=d15f37;de7329=ee814a;", // default Art Academy pale orange
+		"?replace;732000=c26806;bd4a29=db8806;de7329=ffb408;", // shiny gen2 inspired gold
+		"?replace;732000=833900;bd4a29=d58318;de7329=f6c500;" // shiny yellow-orange
 	],
-
 	"furColor" : [ // primary
-		""
+		"?replace;ad664e=ad664e;bd735a=bd735a;e6946a=e6946a;", // default brownish orange
+		"?replace;ad664e=cc643b;bd735a=e67e43;e6946a=ff944a;", // default gen2 orange
+		"?replace;ad664e=996347;bd735a=b87e60;e6946a=cd9171;", // default gen6 brown
+		"?replace;ad664e=c2620b;bd735a=e07819;e6946a=ff9845;", // default PMD orange
+		"?replace;ad664e=d64b00;bd735a=e66400;e6946a=ee8100;", // default Art Academy orange
+		"?replace;ad664e=b58408;bd735a=dba316;e6946a=ffc508;", // shiny gen2 gold
+		"?replace;ad664e=c5b420;bd735a=dbca30;e6946a=eeee39;" // shiny yellow
 	],
-	"pawsColor" : [ // secondary
-		""
+	"pawsColor" : [ // paws
+		"?replace;472700=472700;5a3100=5a3100;835231=835231;", // default brown
+		"?replace;472700=7a1c23;5a3100=992f36;835231=bd4a52;", // default gen2 maroon (gen2 shading)
+		"?replace;472700=8f4b2b;5a3100=a35b39;835231=b46c4a;", // default gen6 brown
+		"?replace;472700=4d2700;5a3100=663400;835231=783d00;", // default PMD brown
+		"?replace;472700=4d291d;5a3100=703f2e;835231=844d3a;", // default Art Academy brown
+		"?replace;472700=c26806;5a3100=db8806;835231=ffb408;", // shiny gen2 inspired gold
+		"?replace;472700=525a31;5a3100=657039;835231=6a8318;" // shiny green
 	],
 	"bellyColor" : [ // tertiary
-		""
+		"?replace;e6c57b=e6c57b;ffde94=ffde94;ffe6b4=ffe6b4;", // default cream
+		"?replace;e6c57b=dbbba5;ffde94=ebcebb;ffe6b4=ffeee1;", // default gen2 white-orange
+		"?replace;e6c57b=ccbd97;ffde94=e0d4b3;ffe6b4=f8edd1;", // default gen6 cream
+		"?replace;e6c57b=b88822;ffde94=d8c067;ffe6b4=fff7a0;", // default PMD cream
+		"?replace;e6c57b=d6caa1;ffde94=ebe2c5;ffe6b4=fff8e1;", // shiny gen2 white-gold
+		"?replace;e6c57b=dbca6f;ffde94=ebd981;ffe6b4=f6e694;" // shiny yellow-y cream
 	],
 	"eyeColor" : [  // eyes
-		""
+		"?replace;291600=291600FE;ffffff=ffffffFE;", // default dark brown
+		"?replace;291600=b41000FE;ffffff=ffffffFE;", // ninetales red
+		"?replace;291600=00466aFE;ffffff=ffffffFE;", // ninetales-a blue
+		"?replace;291600=670a67FE;ffffff=ffffffFE;", // shiny ninetales-a purple
+		"?replace;291600=2e3318FE;ffffff=ffffffFE;" // shiny dark green
+	],
+	"markingsColor" : [
+		"?replace;ad4e4e=ad664e;bd5a5a=bd735a;e66a6a=e6946a;", // furColor
+		"?replace;ad4e4e=e6c57b;bd5a5a=ffde94;e66a6a=ffe6b4;", // bellyColor
+		"?replace;ad4e4e=472700;bd5a5a=5a3100;e66a6a=835231;", // pawsColor
+		"?replace;ad4e4e=732000;bd5a5a=bd4a29;e66a6a=de7329;" // hairColor
+	],
+	"tailMarkingsColor" : [
+		"?replace;910d00=ad664e;b91000=bd735a;e21400=e6946a;", // furColor
+		"?replace;910d00=e6c57b;b91000=ffde94;e21400=ffe6b4;", // bellyColor
+		"?replace;910d00=472700;b91000=5a3100;e21400=835231;", // pawsColor
+		"?replace;910d00=732000;b91000=bd4a29;e21400=de7329;" // hairColor
 	],
 
 	"potionRarity" : "rare"
