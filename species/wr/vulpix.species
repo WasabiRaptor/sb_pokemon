@@ -223,7 +223,8 @@
 		"?replace;e6c57b=ccbd97;ffde94=e0d4b3;ffe6b4=f8edd1;", // default gen6 cream
 		"?replace;e6c57b=b88822;ffde94=d8c067;ffe6b4=fff7a0;", // default PMD cream
 		"?replace;e6c57b=d6caa1;ffde94=ebe2c5;ffe6b4=fff8e1;", // shiny gen2 white-gold
-		"?replace;e6c57b=dbca6f;ffde94=ebd981;ffe6b4=f6e694;" // shiny yellow-y cream
+		"?replace;e6c57b=dbca6f;ffde94=ebd981;ffe6b4=f6e694;", // shiny yellow-y cream
+		"?replace;e6c57b=ad664e;ffde94=bd735a;ffe6b4=e6946a;" // bellyColor
 	],
 	"eyeColor" : [  // eyes
 		"?replace;291600=291600FE;ffffff=ffffffFE;", // default dark brown

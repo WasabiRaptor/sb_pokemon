@@ -28,11 +28,11 @@ function create(name, species, genderIndex, furColor, hairColor, pawsColor, hair
 
 	local directives = ""
 
+	directives = directives..(speciesConfig.bellyColor[bellyColor+1])
 	directives = directives..(speciesConfig.tailMarkingsColor[tailMarkingsColor+1])
 	directives = directives..(speciesConfig.markingsColor[markingsColor+1])
 	directives = directives..(speciesConfig.furColor[furColor+1])
 	directives = directives..(speciesConfig.pawsColor[pawsColor+1])
-	directives = directives..(speciesConfig.bellyColor[bellyColor+1])
 	directives = directives..(speciesConfig.hairColor[hairColor+1])
 	directives = directives..(speciesConfig.eyeColor[eyeColor+1])
 
