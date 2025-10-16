@@ -102,32 +102,36 @@
 	"baseColorPalette" : {
 		"primary" : ["b4b4d5","cbd0e6","ebf1fa"], // white fur
 		"secondary" : ["313957","414a6a","525a7b","737bac"], // dark fur/claws
-		"flesh" : ["181e33", "1d253d", "242c47"]
+		"flesh" : ["181e33", "1d253d", "242c47"],
+		"eyes" : ["cd2920","ffffff"]
 	},
 	"charGenTextLabels" : [
-		"-", // body color
-		"-", // hair type
-		"-", // shirt
+		"Hair Style", // body color
+		"Horn Style", // hair type
+		"Mane Style", // shirt
 		"-", // pants
 
-		"-", // alt option - undy color - facial mask
-		"-", // head option - hair color - facial hair
-		"-", // shirt color
+		"Primary Color", // alt option - undy color - facial mask
+		"Secondary Color", // head option - hair color - facial hair
+		"Eye Color", // shirt color
 		"-", // pants color
 
 		"Absol", // species
 		"Personality" // personality
 	],
 
-	// These are the tables for the replace colors, if your sprites neeed to have their colors replaced, you should probably define those colors here
-	"bodyColor" : [
-		""
+	"primaryColor" : [
+		"?replace;b4b4d5=b4b4d5;cbd0e6=cbd0e6;ebf1fa=ebf1fa;", // default white
+		"?replace;b4b4d5=bd9ccd;cbd0e6=debdee;ebf1fa=f7e5ff;" // shiny pink
 	],
-	"undyColor" : [
-		""
+	"secondaryColor" : [
+		"?replace;242c47=242c47;313957=313957;414a6a=414a6a;525a7b=525a7b;737bac=737bac;", // default bluish
+		"?replace;242c47=182323;313957=293939;414a6a=526262;525a7b=738383;737bac=94a4a4;", // default gen3 grayish
+		"?replace;242c47=4b0303;313957=6a0808;414a6a=a43931;525a7b=cd6a5a;737bac=e68b7b;" // shiny red
 	],
-	"hairColor" : [
-		""
+	"eyeColor" : [
+		"?replace;cd2920=cd2920FE;ffffff=ffffffFE;", // default red
+		"?replace;cd2920=31a494FE;ffffff=ffffffFE;" // shiny teal
 	],
 
 	"defaultBlueprints" : {
