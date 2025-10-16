@@ -22,7 +22,8 @@
 							"anchorPart" : "body",
 							"transformationGroups" : ["headOffset"],
 							"offset" : [0.9375, -0.4375],
-							"zLevel" : 12.9
+							"zLevel" : 12.9,
+							"processingDirectives" : "<facialHairDirectives>"
 						}
 					}
 				}
