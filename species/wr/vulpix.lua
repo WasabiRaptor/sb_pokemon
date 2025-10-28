@@ -5,6 +5,7 @@ local function wrap(index, length, secondary, secondaryLength)
 	if not index then
 		index = math.floor(wrap(secondary, secondaryLength * length) / secondaryLength)
 	end
+	index = math.abs(index)
 	if index < length then return index end
 	return math.fmod(index, length)
 end
