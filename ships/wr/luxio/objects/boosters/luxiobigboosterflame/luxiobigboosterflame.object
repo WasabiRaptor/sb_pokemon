@@ -1,5 +1,5 @@
 {
-  "objectName" : "luxiosmallboosterflame",
+  "objectName" : "wr/luxiobigboosterflame",
   "colonyTags" : [],
   "scannable" : false,
   "rarity" : "Common",
@@ -24,32 +24,30 @@
   "inventoryIcon" : "torchicon.png",
   "orientations" : [
     {
-      "image" : "smallboosterflame.png:on.1",
-      "imagePosition" : [-24, -8],
+      "image" : "luxiobigboosterflame.png:on.1",
+      "imagePosition" : [-32, -20],
       "fullbright" : true,
 
-      "collision" : "solid",
-      "spaces" : [ [-2, 1], [-2, 0], [-2, -1], [-1, 1], [-1, 0], [-1, -1], [0, 1], [0, 0], [0, -1], [1, 1], [1, 0], [1, -1] ],
-      "anchors" : [ "top" ]
+      "anchors" : [ "right" ],
+      "direction" : "right"
     }
   ],
 
   "animation" : "/objects/ship/boosters/boosterflame.animation",
   "animationParts" : {
-    "booster" : "luxiosmallboosterflame.png"
+    "booster" : "luxiobigboosterflame.png"
   },
-  "animationPosition" : [-24, -8],
+  "animationPosition" : [-32, -20],
 
-  "soundEffect" : "/sfx/objects/smallboosterflame.ogg",
-  "soundEffectRangeMultiplier" : 0.5,
+  "soundEffect" : "/sfx/objects/boosterflame.ogg",
 
   "scripts" : ["/objects/ship/boosters/boosterflame.lua"],
   "scriptDelta" : 10,
 
   "flyingBoosterStates" : {
     "none" : "off",
-    "disembarking" : "turnOn",
-    "warp" : "turnOff",
-    "arriving" : "turnOn"
+    "disembarking" : "off",
+    "warp" : "turnOn",
+    "arriving" : "turnOff"
   }
 }

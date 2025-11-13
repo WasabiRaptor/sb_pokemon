@@ -18,6 +18,6 @@
     }
   ],
 
-  "blockKey" : "blockKey.config:blockKey",
+  "blockKey" : "blockKey.config",
   "blockImage" : "luxioT4blocks.png"
 }

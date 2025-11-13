@@ -1,5 +1,5 @@
 {
-  "objectName" : "luxioteleporter",
+  "objectName" : "wr/luxioteleporter",
   "colonyTags" : ["luxio"],
   "printable" : false,
   "rarity" : "Common",

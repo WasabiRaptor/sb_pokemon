@@ -1,5 +1,5 @@
 {
-  "objectName" : "luxiofuelhatch",
+  "objectName" : "wr/luxiofuelhatch",
   "colonyTags" : ["luxio"],
   "printable" : false,
   "rarity" : "Common",

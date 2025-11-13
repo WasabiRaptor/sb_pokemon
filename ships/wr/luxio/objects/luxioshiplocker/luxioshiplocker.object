@@ -1,5 +1,5 @@
 {
-  "objectName" : "luxioshiplocker",
+  "objectName" : "wr/luxioshiplocker",
   "colonyTags" : ["luxio","storage"],
   "printable" : false,
   "rarity" : "Common",

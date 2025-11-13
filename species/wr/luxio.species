@@ -6,6 +6,22 @@
 		"description" : "[TODO] Luxio"
 	},
 	"fallbackShip" : "novakid",
+	"ships" : [
+		"/ships/wr/luxio/luxioT0.structure",
+		"/ships/wr/luxio/luxioT1.structure",
+		"/ships/wr/luxio/luxioT2.structure",
+		"/ships/wr/luxio/luxioT3.structure",
+		"/ships/wr/luxio/luxioT4.structure",
+		"/ships/wr/luxio/luxioT5.structure",
+		"/ships/wr/luxio/luxioT6.structure",
+		"/ships/wr/luxio/luxioT7.structure",
+		"/ships/wr/luxio/luxioT8.structure"
+	],
+	"ai" : {
+		"aiFrames" : "wr/luxioAI.png",
+		"portraitFrames" : "portraits/wr/luxioportrait.png",
+		"staticFrames" : "wr/luxioStatic.png"
+	},
 
 	"statusEffects" : [ "novakidglow" ],
 

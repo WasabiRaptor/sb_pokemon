@@ -1,5 +1,5 @@
 {
-  "objectName" : "luxiotechstation",
+  "objectName" : "wr/luxiotechstation",
   "colonyTags" : ["luxio"],
   "printable" : false,
   "rarity" : "Common",
@@ -46,22 +46,22 @@
   "shipPetType" : "pachirisu",
   "spawnOffset" : [2, -1],
 
-  "chatPortrait" : "/ai/portraits/luxioportrait.png:yell.1",
+  "chatPortrait" : "/ai/portraits/wr/luxioportrait.png:yell.1",
   "dialog" : {
     "wakeUp" : [
-      [ "Rebooting...", "/ai/portraits/luxioportrait.png:unique.1" ],
-      [ "I am S.A.I.L, your Ship-based Artificial Intelligence Lattice. I manage the maintainance of your ship.", "/ai/portraits/luxioportrait.png:talk.0" ],
-      [ "I am also programmed to offer you information and advice.", "/ai/portraits/luxioportrait.png:talk.1" ],
-      [ "Earth was attacked by an unknown force, and was subsequently annihilated.", "/ai/portraits/luxioportrait.png:talk.0" ],
-      [ "The ship's navigation systems were damaged in our escape. Our location is currently unknown.", "/ai/portraits/luxioportrait.png:talk.1" ]
+      [ "Rebooting...", "/ai/portraits/wr/luxioportrait.png:unique.1" ],
+      [ "I am S.A.I.L, your Ship-based Artificial Intelligence Lattice. I manage the maintainance of your ship.", "/ai/portraits/wr/luxioportrait.png:talk.0" ],
+      [ "I am also programmed to offer you information and advice.", "/ai/portraits/wr/luxioportrait.png:talk.1" ],
+      [ "Earth was attacked by an unknown force, and was subsequently annihilated.", "/ai/portraits/wr/luxioportrait.png:talk.0" ],
+      [ "The ship's navigation systems were damaged in our escape. Our location is currently unknown.", "/ai/portraits/wr/luxioportrait.png:talk.1" ]
     ],
     "wakePlayer" : [
-      [ "System is down, please reboot.", "/ai/portraits/luxioportrait.png:unique.1"],
-      [ "Please reboot the system.", "/ai/portraits/luxioportrait.png:unique.1"],
-      [ "Reboot process remains uninitiated.", "/ai/portraits/luxioportrait.png:unique.1"],
-      [ "To make use of your S.A.I.L please reboot.", "/ai/portraits/luxioportrait.png:unique.1" ],
-      [ "Rebooting has shown to improve ship interaction satisfaction levels by 73%.", "/ai/portraits/luxioportrait.png:unique.1"],
-      [ "Rebooting requires a conscious entity to interact with the S.A.I.L console.", "/ai/portraits/luxioportrait.png:unique.1" ]
+      [ "System is down, please reboot.", "/ai/portraits/wr/luxioportrait.png:unique.1"],
+      [ "Please reboot the system.", "/ai/portraits/wr/luxioportrait.png:unique.1"],
+      [ "Reboot process remains uninitiated.", "/ai/portraits/wr/luxioportrait.png:unique.1"],
+      [ "To make use of your S.A.I.L please reboot.", "/ai/portraits/wr/luxioportrait.png:unique.1" ],
+      [ "Rebooting has shown to improve ship interaction satisfaction levels by 73%.", "/ai/portraits/wr/luxioportrait.png:unique.1"],
+      [ "Rebooting requires a conscious entity to interact with the S.A.I.L console.", "/ai/portraits/wr/luxioportrait.png:unique.1" ]
     ]
   },
 
