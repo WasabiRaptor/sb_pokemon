@@ -7,7 +7,7 @@
 	"friendlyName" : "Lexi's Pokemon Races",
 	"includes" : [],
 	"scripts" : {
-		"onLoad" : ["/scripts/wr/assets/poke_onload.lua"]
+		"onLoad" : ["/scripts/wr/pokemon/species_onload.lua"]
 	}
 
 }
