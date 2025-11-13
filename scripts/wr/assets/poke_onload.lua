@@ -99,12 +99,12 @@ for _, species in ipairs(races) do
 	end
 	if not assets.exists("/cinematics/respawn/" .. species .. "/respawncasual.cinematic") then
 		assets.add("/cinematics/respawn/" .. species .. "/respawncasual.cinematic",
-			assets.bytes(speciesConfig.teleportCinematic or "/cinematics/respawn/wr/template/respawncasual.cinematic")
+			assets.bytes(speciesConfig.respawncasualCinematic or "/cinematics/respawn/wr/template/respawncasual.cinematic")
 			:gsub("%<species%>", species):gsub("%<effectDirectives%>", speciesConfig.effectDirectives))
 	end
 	if not assets.exists("/cinematics/respawn/" .. species .. "/respawnsurvival.cinematic") then
 		assets.add("/cinematics/respawn/" .. species .. "/respawnsurvival.cinematic",
-			assets.bytes(speciesConfig.teleportCinematic or "/cinematics/respawn/wr/template/respawnsurvival.cinematic")
+			assets.bytes(speciesConfig.respawnsurvivalCinematic or "/cinematics/respawn/wr/template/respawnsurvival.cinematic")
 			:gsub("%<species%>", species):gsub("%<effectDirectives%>", speciesConfig.effectDirectives))
 	end
 
