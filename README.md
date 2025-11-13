@@ -1,2 +1,2 @@
-# sb_pokemon
-
+# Lexi's Pokemon Races
+Lexi's Pokemon Races for Starbound

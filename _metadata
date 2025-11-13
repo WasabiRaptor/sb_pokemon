@@ -4,7 +4,7 @@
 	"author" : "Zygan, Wasabi_Raptor",
 	"description" : "",
 	"name" : "wr_pokemon",
-	"friendlyName" : "Raptor's Pokemon Mod",
+	"friendlyName" : "Lexi's Pokemon Races",
 	"includes" : [],
 	"scripts" : {
 		"onLoad" : ["/scripts/wr/assets/poke_onload.lua"]
