@@ -1,7 +1,7 @@
 {
 	"kind" : "wr/vaporeon",
 
-
+	"fallbackShip" : "hylotl",
 	"charCreationTooltip" : {
 		"title" : "Vaporeon",
 		"subTitle" : "H20",

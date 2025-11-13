@@ -5,6 +5,7 @@
 		"subTitle" : "Ne",
 		"description" : "[TODO] Luxio"
 	},
+	"fallbackShip" : "novakid",
 
 	"statusEffects" : [ "novakidglow" ],
 

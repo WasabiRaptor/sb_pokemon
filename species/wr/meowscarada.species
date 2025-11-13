@@ -1,6 +1,7 @@
 {
 	"kind" : "wr/meowscarada",
 
+	"fallbackShip" : "floran",
 	"potionRarity" : "rare",
 	"voreConfig" : [
 		"/humanoid/any/vore.config",

@@ -1,7 +1,7 @@
 {
 	"kind" : "wr/absol",
 
-
+	"fallbackShip" : "avian",
 	"charCreationTooltip" : {
 		"title" : "Absol",
 		"subTitle" : "Omen",

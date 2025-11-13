@@ -1,7 +1,7 @@
 {
 	"kind" : "wr/vulpix",
 
-
+	"fallbackShip" : "novakid",
 	"charCreationTooltip" : {
 		"title" : "Vulpix",
 		"subTitle" : "",

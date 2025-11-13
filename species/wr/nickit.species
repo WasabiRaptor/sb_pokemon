@@ -2,7 +2,7 @@
 	"kind" : "wr/nickit",
 
 	"potionRarity" : "rare",
-
+	"fallbackShip" : "human",
 	"charCreationTooltip" : {
 			"title" : "Nickit",
 			"subTitle" : "Au",

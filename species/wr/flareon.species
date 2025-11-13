@@ -1,7 +1,7 @@
 {
 	"kind" : "wr/flareon",
 
-
+	"fallbackShip" : "novakid",
 	"charCreationTooltip" : {
 		"title" : "Flareon",
 		"subTitle" : "Floofer",
