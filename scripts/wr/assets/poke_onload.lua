@@ -80,6 +80,10 @@ for _, species in ipairs(races) do
 	quests_patch = sb.jsonMerge(quests_patch, {
 		initialquests = {
 			[species] = speciesConfig.initialquests or { "protectorate" }
+		},
+		pronouns = speciesConfig.pronouns,
+		pronounGenders = {
+			[species] = speciesConfig.pronounGenders or { male = speciesConfig.genders[1].name, female = speciesConfig.genders[2].name }
 		}
 	})
 
