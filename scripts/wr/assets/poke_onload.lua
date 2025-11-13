@@ -155,6 +155,9 @@ for _, species in ipairs(races) do
 		assets.add("/ai/portraits/" .. species .. "questportrait.png",
 			assets.image("/ai/portraits/"..fallbackShip.."questportrait.png"))
 	end
+
+	aiConfig = sb.jsonMerge(aiConfig, ai_patch)
+	universeServerConfig = sb.jsonMerge(universeServerConfig, universe_server_patch)
 end
 
 assets.add("/interface/windowconfig/charcreation.config.patch", sb.printJson(charcreation_patch))
