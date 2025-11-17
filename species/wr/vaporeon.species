@@ -184,8 +184,7 @@
 
 		"?replace;072734=482785;0d4f6a=633da8;1b80a7=7b52c5;42b2dd=deadff;6dc4e5=eacbff;", // purple (gen2 shiny)
 		"?replace;072734=784088;0d4f6a=b880c0;1b80a7=e0a8e0;42b2dd=f8c0f0;6dc4e5=ffdafa;", // magenta (gen3 shiny)
-		"?replace;072734=6e184b;0d4f6a=bd62d5;1b80a7=e694e6;42b2dd=ffbdff;6dc4e5=f9c7f9;", // magenta (gen5 shiny)
-		""
+		"?replace;072734=6e184b;0d4f6a=bd62d5;1b80a7=e694e6;42b2dd=ffbdff;6dc4e5=f9c7f9;" // magenta (gen5 shiny)
 	],
 	"earFinnColor": [ // ear fins
 		"?replace;786c31=786c31;b1a14e=b1a14e;dcca6b=dcca6b;f2eab4=f2eab4;fdf9e3=fdf9e3;", // yellow (default)
@@ -193,8 +192,7 @@
 		"?replace;786c31=887828;b1a14e=c59d2e;dcca6b=e0b848;f2eab4=f8e878;fdf9e3=fff298;", // yellow (gen3)
 		"?replace;786c31=6a6220;b1a14e=a29347;dcca6b=bdac5a;f2eab4=ffe6a4;fdf9e3=ffefc4;", // yellow (gen5)
 
-		"?replace;786c31=c590e8;b1a14e=deadff;dcca6b=eacbff;f2eab4=f3e1ff;fdf9e3=fefefe;", // purplish white (gen2 shiny)
-		""
+		"?replace;786c31=c590e8;b1a14e=deadff;dcca6b=eacbff;f2eab4=f3e1ff;fdf9e3=fefefe;" // purplish white (gen2 shiny)
 	],
 	"bellyColor": [ // underbelly
 		"?replace;545454=545454;8a8a8a=8a8a8a;b3b3b3=b3b3b3;e0e0e0=e0e0e0;fefefe=fefefe;", // white (default)
@@ -202,8 +200,7 @@
 		"?replace;545454=585870;8a8a8a=8f8fb4;b3b3b3=a8a8c8;e0e0e0=e0e0e0;fefefe=f8f8f8;", // white (gen3)
 		"?replace;545454=686868;8a8a8a=8b8b8b;b3b3b3=cdcdcd;e0e0e0=e8e8e8;fefefe=f8f8f8;", // white (gen5)
 
-		"?replace;545454=c590e8;8a8a8a=deadff;b3b3b3=eacbff;e0e0e0=f3e1ff;fefefe=fefefe;", // purplish white (gen2 shiny)
-		""
+		"?replace;545454=c590e8;8a8a8a=deadff;b3b3b3=eacbff;e0e0e0=f3e1ff;fefefe=fefefe;" // purplish white (gen2 shiny)
 	],
 	"dorsalFinnColor": [
 		"?replace;0b2e67=0b2e67;194893=194893;2d66c3=2d66c3;", // dark blue (default)
@@ -213,8 +210,7 @@
 
 		"?replace;0b2e67=1e1134;194893=2d1951;2d66c3=381268;", // purplish black (gen2 shiny)
 		"?replace;0b2e67=5d203b;194893=803858;2d66c3=b07098;", // dark magenta (gen3 shiny)
-		"?replace;0b2e67=621041;194893=83395a;2d66c3=914768;", // dark magenta (gen5 shiny)
-		""
+		"?replace;0b2e67=621041;194893=83395a;2d66c3=914768;" // dark magenta (gen5 shiny)
 	],
 
 
