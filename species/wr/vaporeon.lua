@@ -9,7 +9,7 @@ local function wrap(index, length, secondary, secondaryLength)
 	if index < length then return index end
 	return math.fmod(index, length)
 end
-function create(name, species, genderIndex, primaryColor, neckFinnColor, bellyColor, beansColor, dorsalFinnColor, neckFinnStyle, earFinnColor, pantsColor, personality, ...)
+function create(name, species, genderIndex, primaryColor, earFinnColor, bellyColor, dorsalFinnColor, headFinnStyle, neckFinnStyle, neckFinnColor, pantsColor, personality, ...)
 	-- these values are zero indexed!
 
 	local speciesConfig = root.speciesConfig(species)
@@ -21,9 +21,9 @@ function create(name, species, genderIndex, primaryColor, neckFinnColor, bellyCo
 
 	primaryColor = wrap(primaryColor, #speciesConfig.bodyColor)
 	neckFinnColor = wrap(neckFinnColor, #speciesConfig.neckFinnColor)
-	dorsalFinnColor = wrap(dorsalFinnColor, #speciesConfig.dorsalFinnColor)
+	headFinnStyle = wrap(headFinnStyle, #speciesConfig.headFinnStyle)
 	bellyColor = wrap(bellyColor, #speciesConfig.bellyColor)
-	beansColor = wrap(beansColor, #speciesConfig.beansColor)
+	dorsalFinnColor = wrap(dorsalFinnColor, #speciesConfig.dorsalFinnColor)
 	earFinnColor = wrap(earFinnColor, #speciesConfig.earFinnColor)
 
 	neckFinnStyle = wrap(neckFinnStyle, #speciesConfig.neckFinnStyle)
@@ -32,12 +32,11 @@ function create(name, species, genderIndex, primaryColor, neckFinnColor, bellyCo
 
 	local directives = ""
 
-	directives = directives .. (speciesConfig.bodyColor[primaryColor + 1])
-	directives = directives .. (speciesConfig.bellyColor[bellyColor + 1])
-	directives = directives .. (speciesConfig.beansColor[beansColor + 1])
 	directives = directives .. (speciesConfig.neckFinnColor[neckFinnColor + 1])
-	directives = directives .. (speciesConfig.dorsalFinnColor[dorsalFinnColor + 1])
 	directives = directives .. (speciesConfig.earFinnColor[earFinnColor + 1])
+	directives = directives .. (speciesConfig.bellyColor[bellyColor + 1])
+	directives = directives .. (speciesConfig.bodyColor[primaryColor + 1])
+	directives = directives .. (speciesConfig.dorsalFinnColor[dorsalFinnColor + 1])
 
 
 	local personalityIdle, personalityArmIdle, personalityHeadOffset, personalityArmOffset = table.unpack(humanoidConfig.personalities[personality+1])
@@ -46,8 +45,8 @@ function create(name, species, genderIndex, primaryColor, neckFinnColor, bellyCo
 		name = name,
 		species = species,
 		gender = gender.name,
-		hairGroup = "",
-		hairType = "",
+		hairGroup = "hair",
+		hairType = speciesConfig.headFinnStyle[headFinnStyle+1],
 		hairDirectives = directives,
 		bodyDirectives = directives,
 		emoteDirectives = directives,
@@ -64,7 +63,7 @@ function create(name, species, genderIndex, primaryColor, neckFinnColor, bellyCo
 		color = {51, 117, 237, 255},
 	}
 	local parameters = {
-		choices = { genderIndex, primaryColor, neckFinnColor, bellyColor, beansColor, dorsalFinnColor, neckFinnStyle, earFinnColor, pantsColor, personality, ... },
+		choices = { genderIndex, primaryColor, earFinnColor, bellyColor, dorsalFinnColor, headFinnStyle, neckFinnStyle, neckFinnColor, pantsColor, personality, ... },
 		--this you can do a lot with, see the humanoid build script
 	}
 	local armor = {
