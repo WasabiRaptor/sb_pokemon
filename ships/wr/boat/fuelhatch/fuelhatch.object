@@ -1,5 +1,5 @@
 {
-  "objectName" : "wr/boat_fuelhatch",
+  "objectName" : "wr/meowscarada_boat_fuelhatch",
   "colonyTags" : ["nickit"],
   "printable" : false,
   "rarity" : "Common",
@@ -19,7 +19,7 @@
       "animationCycle" : 0.7,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ ]
     }
   ],
 

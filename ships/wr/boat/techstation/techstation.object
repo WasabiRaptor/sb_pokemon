@@ -1,5 +1,5 @@
 {
-  "objectName" : "wr/boat_techstation",
+  "objectName" : "wr/meowscarada_boat_techstation",
   "colonyTags" : ["nickit"],
   "printable" : false,
   "rarity" : "Common",
@@ -23,7 +23,7 @@
       "animationCycle" : 3.0,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ ]
 
     }
   ],

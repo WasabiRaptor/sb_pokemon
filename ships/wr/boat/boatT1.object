@@ -1,5 +1,5 @@
 {
-	"objectName" : "wr/boat",
+	"objectName" : "wr/meowscarada_boat",
 	"colonyTags" : ["generic"],
 	"rarity" : "Common",
 	"category" : "decorative",
@@ -30,17 +30,17 @@
 			"collisionSpaces" : [ [-4,68], [48,15], [49,15] ]
 		}
 	],
-	"scripts" : ["/scripts/object/SBQ_multi_object.lua"],
+	"scripts" : ["/scripts/wr/objects/multi_object.lua"],
 	"placeObjects" : [
-		["wr/boat_col",[0,1],1,{"unbreakable":true}],
-		["wr/boat_fg",[-1,0],1,{"unbreakable":true}],
-		["wr/boat_boosterflame",[-51,11],1,{"unbreakable":true}],
-		["wr/boat_boosterflame",[-50,4],1,{"unbreakable":true}],
-		["wr/boat_captainschair_fake",[-23,22],1,{"unbreakable":true}]
-		// ["wr/boat_shipdoor",[-19,3],1,{}],
-		// ["wr/boat_shipdoor",[-29,3],1,{}],
-		// ["wr/boat_shipdoor",[-19,15],1,{}],
-		// ["wr/boat_shipdoor",[-41,15],1,{}]
+		["wr/meowscarada_boat_col",[0,1],1,{"unbreakable":true}],
+		["wr/meowscarada_boat_fg",[-1,0],1,{"unbreakable":true}],
+		["wr/meowscarada_boat_boosterflame",[-51,11],1,{"unbreakable":true}],
+		["wr/meowscarada_boat_boosterflame",[-50,4],1,{"unbreakable":true}],
+		["wr/meowscarada_boat_captainschair_fake",[-23,22],1,{"unbreakable":true}],
+		["wr/meowscarada_boat_shipdoor",[-19,3],1,{}],
+		["wr/meowscarada_boat_shipdoor",[-29,3],1,{}],
+		["wr/meowscarada_boat_shipdoor",[-19,15],1,{}],
+		["wr/meowscarada_boat_shipdoor",[-41,15],1,{}]
 	],
 
 	"objectType" : "physics",

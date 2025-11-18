@@ -113,8 +113,8 @@
 
 // Furniture Table 2
 			{ "item" : "humanstoragelocker" },
-			{ "item" : "wr/boat_shipdoor" },
-			{ "item" : "wr/boat_shiphatch" },
+			{ "item" : "wr/meowscarada_boat_shipdoor" },
+			{ "item" : "wr/meowscarada_boat_shiphatch" },
 
 // Spinning Wheel
 			{ "item" : "conceptchest" },

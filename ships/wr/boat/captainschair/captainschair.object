@@ -1,5 +1,5 @@
 {
-  "objectName" : "wr/boat_captainschair",
+  "objectName" : "wr/meowscarada_boat_captainschair",
   "colonyTags" : ["nickit"],
   "itemTags" : ["captainschair"],
   "printable" : false,
@@ -20,7 +20,7 @@
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
+      "anchors" : [ ],
       "direction" : "right",
       "sitPosition" : [-12, 20]
     }
