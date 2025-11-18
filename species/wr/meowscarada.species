@@ -1,7 +1,23 @@
 {
 	"kind" : "wr/meowscarada",
+	"charCreationTooltip" : {
+			"title" : "Meowscarada",
+			"subTitle" : "Kitty",
+			"description" : "The trickiest grass cat."
+	},
 
 	"fallbackShip" : "floran",
+	"ships" : [
+		"/ships/wr/meowscarada_boat/structures/T0.structure",
+		"/ships/wr/meowscarada_boat/structures/T1.structure",
+		"/ships/wr/meowscarada_boat/structures/T2.structure",
+		"/ships/wr/meowscarada_boat/structures/T3.structure",
+		"/ships/wr/meowscarada_boat/structures/T4.structure",
+		"/ships/wr/meowscarada_boat/structures/T4.structure",
+		"/ships/wr/meowscarada_boat/structures/T4.structure",
+		"/ships/wr/meowscarada_boat/structures/T4.structure",
+		"/ships/wr/meowscarada_boat/structures/T4.structure"
+	],
 	"potionRarity" : "rare",
 	"voreConfig" : [
 		"/humanoid/any/vore.config",
@@ -11,11 +27,6 @@
 			}
 		}
 	],
-	"charCreationTooltip" : {
-			"title" : "Meowscarada",
-			"subTitle" : "Kitty",
-			"description" : "The trickiest grass cat."
-	},
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
