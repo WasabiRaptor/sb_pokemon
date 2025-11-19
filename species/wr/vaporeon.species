@@ -178,29 +178,31 @@
 	],
 	"bodyColor": [
 		"?replace;072734=072734;0d4f6a=0d4f6a;1b80a7=1b80a7;42b2dd=42b2dd;6dc4e5=6dc4e5;", // light blue (default)
-		"?replace;072734=16218b;0d4f6a=2b38c5;1b80a7=4a5aff;42b2dd=84b5ff;6dc4e5=b9d5ff;", // blue (gen2)
+		"?replace;072734=416fb4;0d4f6a=5584cb;1b80a7=6999e2;42b2dd=84b5ff;6dc4e5=b9d5ff;", // blue (gen2 light)
+		"?replace;072734=16218b;0d4f6a=2631a2;1b80a7=2b38c5;42b2dd=4a5aff;6dc4e5=5c79ff;", // blue (gen2 dark)
 		"?replace;072734=106850;0d4f6a=38a088;1b80a7=60c8b0;42b2dd=80e8d0;6dc4e5=aaf9e7;", // teal (gen3)
 		"?replace;072734=0e4a63;0d4f6a=2d7f9c;1b80a7=419cbd;42b2dd=5ac5e6;6dc4e5=83deff;", // light blue (gen5)
 
-		"?replace;072734=482785;0d4f6a=633da8;1b80a7=7b52c5;42b2dd=deadff;6dc4e5=eacbff;", // purple (gen2 shiny)
+		"?replace;072734=9659bf;0d4f6a=a86dd1;1b80a7=c28ae8;42b2dd=deadff;6dc4e5=eacbff;", // purple (gen2 shiny light)
+		"?replace;072734=482785;0d4f6a=543097;1b80a7=633da8;42b2dd=7b52c5;6dc4e5=986fe2;", // purple (gen2 shiny dark)
 		"?replace;072734=784088;0d4f6a=b880c0;1b80a7=e0a8e0;42b2dd=f8c0f0;6dc4e5=ffdafa;", // magenta (gen3 shiny)
 		"?replace;072734=6e184b;0d4f6a=bd62d5;1b80a7=e694e6;42b2dd=ffbdff;6dc4e5=f9c7f9;" // magenta (gen5 shiny)
 	],
 	"earFinnColor": [ // ear fins
 		"?replace;786c31=786c31;b1a14e=b1a14e;dcca6b=dcca6b;f2eab4=f2eab4;fdf9e3=fdf9e3;", // yellow (default)
-		"?replace;786c31=4a7bc5;b1a14e=84b5ff;dcca6b=b9d5ff;f2eab4=e9f2ff;fdf9e3=fefefe;", // bluish white (gen2)
+		"?replace;786c31=84b5ff;b1a14e=b9d5ff;dcca6b=e9f2ff;f2eab4=fefefe;fdf9e3=fefefe;", // bluish white (gen2)
 		"?replace;786c31=887828;b1a14e=c59d2e;dcca6b=e0b848;f2eab4=f8e878;fdf9e3=fff298;", // yellow (gen3)
 		"?replace;786c31=6a6220;b1a14e=a29347;dcca6b=bdac5a;f2eab4=ffe6a4;fdf9e3=ffefc4;", // yellow (gen5)
 
-		"?replace;786c31=c590e8;b1a14e=deadff;dcca6b=eacbff;f2eab4=f3e1ff;fdf9e3=fefefe;" // purplish white (gen2 shiny)
+		"?replace;786c31=deadff;b1a14e=eacbff;dcca6b=f3e1ff;f2eab4=fefefe;fdf9e3=fefefe;" // purplish white (gen2 shiny)
 	],
 	"bellyColor": [ // underbelly
 		"?replace;545454=545454;8a8a8a=8a8a8a;b3b3b3=b3b3b3;e0e0e0=e0e0e0;fefefe=fefefe;", // white (default)
-		"?replace;545454=4a7bc5;8a8a8a=4a7bc5;b3b3b3=b9d5ff;e0e0e0=e9f2ff;fefefe=fefefe;", // bluish white (gen2)
+		"?replace;545454=84b5ff;8a8a8a=b9d5ff;b3b3b3=e9f2ff;e0e0e0=fefefe;fefefe=fefefe;", // bluish white (gen2)
 		"?replace;545454=585870;8a8a8a=8f8fb4;b3b3b3=a8a8c8;e0e0e0=e0e0e0;fefefe=f8f8f8;", // white (gen3)
 		"?replace;545454=686868;8a8a8a=8b8b8b;b3b3b3=cdcdcd;e0e0e0=e8e8e8;fefefe=f8f8f8;", // white (gen5)
 
-		"?replace;545454=c590e8;8a8a8a=deadff;b3b3b3=eacbff;e0e0e0=f3e1ff;fefefe=fefefe;" // purplish white (gen2 shiny)
+		"?replace;545454=deadff;8a8a8a=eacbff;b3b3b3=f3e1ff;e0e0e0=fefefe;fefefe=fefefe;" // purplish white (gen2 shiny)
 	],
 	"dorsalFinnColor": [
 		"?replace;0b2e67=0b2e67;194893=194893;2d66c3=2d66c3;", // dark blue (default)
