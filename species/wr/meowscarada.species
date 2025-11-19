@@ -24,8 +24,10 @@
 		"staticFrames" : "wr/pokemon/static.png",
 		"questPortrait" : "portraits/wr/pokemonquestportrait.png",
 
-		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=139485;b168fb=1ac8b4;dcc6ff=d5f4f0"
+		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=12ae9c;b168fb=1ac8b4;dcc6ff=d5f4f0"
 	},
+	"effectDirectives" : "?replace;31a6ff=09d6aa;9bd4ffFF=3eeeb8;FEFFFF=c8ffee;",
+
 	"respawnCasualCinematic" : "/cinematics/respawn/wr/pokemon/casual.cinematic",
 	"respawnSurvivalCinematic" : "/cinematics/respawn/wr/pokemon/survival.cinematic",
 	"buildScripts" : ["/humanoid/opensb/build.lua","/humanoid/wr/build_pokemon.lua"],
@@ -72,7 +74,6 @@
 
 	"charGenTextLabels" : [ "Eye colour", "Hair style", "Shirt", "Legwear", "Mask/Fur", "Ears/Marks", "Shirt colour", "Legwear colour", "Meowscarada", "Personality" ],
 	"skull" : "/humanoid/human/dead.png",
-	"effectDirectives" : "?replace;FEFFFFFF=cfffa7FF;9bd4ffFF=b4ff74FF;31a6ffFF=92e64aFF",
 	"defaultBlueprints" : {
 		"tier1" : [
 

@@ -16,8 +16,9 @@
 		"staticFrames" : "wr/pokemon/static.png",
 		"questPortrait" : "portraits/wr/pokemonquestportrait.png",
 
-		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=139485;b168fb=1ac8b4;dcc6ff=d5f4f0"
+		"directives" : "?replace;5a00b7=d10c2b;740de2=ae0830;9529ff=80072f;b168fb=6e0527;dcc6ff=ffbcc7"
 	},
+	"effectDirectives" : "?replace;31a6ff=bf0321;9bd4ffFF=6e0527;FEFFFF=000000;",
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
@@ -65,7 +66,6 @@
 	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
 
 	"skull" : "/humanoid/human/dead.png",
-	"effectDirectives" : "?replace;FEFFFFFF=000000FF;9bd4ffFF=5c0955FF;31a6ffFF=900a85FF",
 
 	"baseColorPalette" : {
 		"primary" : ["853b21","9b482a","b25938"], // red fur

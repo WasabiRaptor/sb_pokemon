@@ -15,8 +15,9 @@
 		"staticFrames" : "wr/pokemon/static.png",
 		"questPortrait" : "portraits/wr/pokemonquestportrait.png",
 
-		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=139485;b168fb=1ac8b4;dcc6ff=d5f4f0"
+		"directives" : "?replace;5a00b7=b73200;740de2=e2460d;9529ff=ff6729;b168fb=fb9168;dcc6ff=ffd0c6"
 	},
+	"effectDirectives" : "?replace;31a6ff=ff5900;9bd4ffFF=ffa037;FEFFFF=ffe589;",
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
@@ -68,7 +69,6 @@
 	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
 
 	"skull" : "/humanoid/human/dead.png",
-	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=ff99e6FF;31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
 		"tier1" : [
 

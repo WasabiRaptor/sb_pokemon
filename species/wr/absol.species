@@ -13,8 +13,9 @@
 		"staticFrames" : "wr/pokemon/static.png",
 		"questPortrait" : "portraits/wr/pokemonquestportrait.png",
 
-		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=139485;b168fb=1ac8b4;dcc6ff=d5f4f0"
+		"directives" : "?replace;5a00b7=e2e2e2;740de2=aeaeae;9529ff=686868;b168fb=2e2e2e;dcc6ff=ffffff"
 	},
+	"effectDirectives" : "?replace;31a6ff=ffffff;9bd4ffFF=8b8b8b;FEFFFF=000000;",
 
 	"respawnCasualCinematic" : "/cinematics/respawn/wr/pokemon/casual.cinematic",
 	"respawnSurvivalCinematic" : "/cinematics/respawn/wr/pokemon/survival.cinematic",
@@ -92,7 +93,6 @@
 
 
 	"skull" : "/humanoid/human/dead.png",
-	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=ff99e6FF;31a6ffFF=e359b9FF",
 
 	"hair" : [ "0" ],
 	"horn" : [ "0" ],

@@ -25,6 +25,8 @@
 
 		"directives" : ""
 	},
+	"effectDirectives" : "?replace;31a6ff=ffd029;9bd4ffFF=ffeb64;FEFFFF=fff8c6;",
+
 	"respawnCasualCinematic" : "/cinematics/respawn/wr/pokemon/casual.cinematic",
 	"respawnSurvivalCinematic" : "/cinematics/respawn/wr/pokemon/survival.cinematic",
 
@@ -61,7 +63,6 @@
 	"nameGen" : [ "/species/wr/luxiomalenamegen.config:names", "/species/wr/luxiofemalenamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/luxio/luxiohurt.ogg", "/sfx/luxio/luxiohurt.ogg" ],
 	"skull" : "/humanoid/luxio/dead.png",
-	"effectDirectives" : "?replace=FEFFFFFF=DCC6FFFF?replace=9bd4ffFF=B168FBFF?replace=31a6ffFF=9529FFFF",
 	"charGenTextLabels" : [
 		"Fur Color", // body color
 		"Eye Color", // hair type
