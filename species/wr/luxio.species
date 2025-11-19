@@ -18,9 +18,9 @@
 		"/ships/wr/luxio/luxioT8.structure"
 	],
 	"ai" : {
-		"aiFrames" : "wr/luxioAI.png",
-		"portraitFrames" : "portraits/wr/luxioportrait.png",
-		"staticFrames" : "wr/luxioStatic.png"
+		"aiFrames" : "wr/luxio/ai.png",
+		"portraitFrames" : "wr/luxio/portrait.png",
+		"staticFrames" : "wr/luxio/static.png"
 	},
 
 	"statusEffects" : [ "novakidglow" ],

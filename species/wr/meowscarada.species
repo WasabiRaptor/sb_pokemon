@@ -18,6 +18,12 @@
 		"/ships/wr/meowscarada_boat/structures/T4.structure",
 		"/ships/wr/meowscarada_boat/structures/T4.structure"
 	],
+	"ai" : {
+		"aiFrames" : "wr/meowscarada/ai.png",
+		"portraitFrames" : "wr/meowscarada/portrait.png",
+		"staticFrames" : "wr/meowscarada/static.png"
+	},
+
 	"potionRarity" : "rare",
 	"voreConfig" : [
 		"/humanoid/any/vore.config",
