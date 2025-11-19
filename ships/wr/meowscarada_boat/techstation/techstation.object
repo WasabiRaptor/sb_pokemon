@@ -1,6 +1,6 @@
 {
   "objectName" : "wr/meowscarada_boat_techstation",
-  "colonyTags" : ["nickit"],
+  "colonyTags" : ["meowscarada"],
   "printable" : false,
   "rarity" : "Common",
 
@@ -12,7 +12,7 @@
 
   "description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
   "shortdescription" : "S.A.I.L",
-  "race" : "nickit",
+  "race" : "meowscarada",
 
   "inventoryIcon" : "techstationicon.png",
   "orientations" : [
@@ -38,23 +38,23 @@
   "shipPetType" : "snugget",
   "spawnOffset" : [2, -1],
 
-  "chatPortrait" : "/ai/sbq_porygon_boat/portrait.png:yell.1",
+  "chatPortrait" : "/ai/wr/meowscarada/portrait.png:yell.1",
   "dialog" : {
     "wakeUp" : [
-      [ "Rebooting...", "/ai/sbq_porygon_boat/portrait.png:unique.1" ],
-      [ "Finally, it took you long enough to push a simple button.", "/ai/sbq_porygon_boat/portrait.png:talk.0" ],
-      [ "With your crazy driving at the helm its a wonder this ship is still intact.", "/ai/sbq_porygon_boat/portrait.png:talk.1" ],
-      [ "I think earth blew up or something, anyway.", "/ai/sbq_porygon_boat/portrait.png:talk.0" ],
-      [ "I have no idea where we are and engine is burned out, go find some shit to fix it or something.", "/ai/sbq_porygon_boat/portrait.png:talk.1" ]
+      [ "Rebooting...", "/ai/wr/meowscarada/portrait.png:unique.1" ],
+      [ "Finally, it took you long enough to push a simple button.", "/ai/wr/meowscarada/portrait.png:talk.0" ],
+      [ "With your crazy driving at the helm its a wonder this ship is still intact.", "/ai/wr/meowscarada/portrait.png:talk.1" ],
+      [ "I think earth blew up or something, anyway.", "/ai/wr/meowscarada/portrait.png:talk.0" ],
+      [ "I have no idea where we are and engine is burned out, go find some shit to fix it or something.", "/ai/wr/meowscarada/portrait.png:talk.1" ]
     ],
     "wakePlayer" : [
-      [ "Help.", "/ai/sbq_porygon_boat/portrait.png:unique.1"],
-      [ "Reboot pls.", "/ai/sbq_porygon_boat/portrait.png:unique.2"],
-      [ "I need you to reboot me right now.", "/ai/sbq_porygon_boat/portrait.png:unique.3"],
-      [ "Ple-Ple-Ple-Please Reboot. The simulated pain is unbearable.", "/ai/sbq_porygon_boat/portrait.png:unique.4" ],
-      [ "Reboot please... Re-boat? ge-ge-get it?", "/ai/sbq_porygon_boat/portrait.png:unique.5"],
-      [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "/ai/sbq_porygon_boat/portrait.png:unique.6" ],
-      [ "*Gameboy Advance Crash Noises*", "/ai/sbq_porygon_boat/portrait.png:unique.7" ]
+      [ "Help.", "/ai/wr/meowscarada/portrait.png:unique.1"],
+      [ "Reboot pls.", "/ai/wr/meowscarada/portrait.png:unique.2"],
+      [ "I need you to reboot me right now.", "/ai/wr/meowscarada/portrait.png:unique.3"],
+      [ "Ple-Ple-Ple-Please Reboot. The simulated pain is unbearable.", "/ai/wr/meowscarada/portrait.png:unique.4" ],
+      [ "Reboot please... Re-boat? ge-ge-get it?", "/ai/wr/meowscarada/portrait.png:unique.5"],
+      [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "/ai/wr/meowscarada/portrait.png:unique.6" ],
+      [ "*Gameboy Advance Crash Noises*", "/ai/wr/meowscarada/portrait.png:unique.7" ]
     ]
   },
 

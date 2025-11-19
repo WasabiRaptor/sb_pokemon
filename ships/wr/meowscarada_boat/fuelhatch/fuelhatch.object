@@ -1,12 +1,12 @@
 {
   "objectName" : "wr/meowscarada_boat_fuelhatch",
-  "colonyTags" : ["nickit"],
+  "colonyTags" : ["meowscarada"],
   "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
   "description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
   "shortdescription" : "FTL Fuel Hatch",
-  "race" : "nickit",
+  "race" : "meowscarada",
   "lightColor" : [102, 90, 61],
 
   "inventoryIcon" : "fuelhatchicon.png",

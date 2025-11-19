@@ -1,6 +1,6 @@
 {
   "objectName" : "wr/meowscarada_boat_captainschair",
-  "colonyTags" : ["nickit"],
+  "colonyTags" : ["meowscarada"],
   "itemTags" : ["captainschair"],
   "printable" : false,
   "rarity" : "Common",
@@ -8,7 +8,7 @@
 
   "description" : "The Captain uses this to fly the ship.",
   "shortdescription" : "Space Sloop Helm",
-  "race" : "nickit",
+  "race" : "meowscarada",
   "category" : "furniture",
 
   "inventoryIcon" : "captainschairicon.png",

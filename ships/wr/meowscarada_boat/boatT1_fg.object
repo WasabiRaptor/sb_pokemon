@@ -1,6 +1,6 @@
 {
 	"objectName" : "wr/meowscarada_boat_fg",
-	"colonyTags" : ["generic"],
+	"colonyTags" : [],
 	"rarity" : "Common",
 	"category" : "decorative",
 	"price" : 60,
@@ -11,12 +11,14 @@
 
 	"inventoryIcon" : "boatT1_fg.png",
 	"animation" :"boatT1_fg.animation",
-	"scripts" : ["/scripts/object/SBQ_foreground_object.lua"],
+	"fadeSpeed":2,
+	"scriptDelta" : 2,
+	"scripts" : ["/scripts/wr/objects/foreground_object.lua"],
 	"orientations" : [
 		{
 			"image" : "boatT1_fg.png",
-			"imagePosition" : [-424, -80],
-			"animationPosition" : [-424, -80],
+			"imagePosition" : [-360, -8],
+			"animationPosition" : [-360, -8],
 			"spaces" : [[-45,7],[-41,0],[0,0],[48,15]],
 			"renderLayer" : "ForegroundTile+11",
 			"anchors" : [ ],

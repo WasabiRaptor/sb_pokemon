@@ -1,6 +1,6 @@
 {
 	"objectName" : "wr/meowscarada_boat_col",
-	"colonyTags" : ["generic"],
+	"colonyTags" : [],
 	"rarity" : "Common",
 	"category" : "decorative",
 	"price" : 60,
@@ -13,7 +13,7 @@
 	"orientations" : [
 		{
 			"imageLayers" : [ { "image" : "boatT1_col.png", "fullbright" : true }, { "image" : "boatT1_col.png?multiply=FFFFFFBD" } ],
-			"imagePosition" : [-432, -88],
+			"imagePosition" : [-368, -16],
 			"renderLayer" : "ForegroundTile+10",
 			"spaceScan" : 1,
 			"anchors" : [ ],

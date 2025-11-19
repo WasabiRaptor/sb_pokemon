@@ -1,13 +1,13 @@
 {
   "objectName" : "wr/meowscarada_boat_shipdoor",
-  "colonyTags" : ["nickit","door"],
+  "colonyTags" : ["meowscarada","door"],
   "rarity" : "Common",
 
   "category" : "door",
   "price" : 125,
   "description" : "A door suitable for a spaceship.",
   "shortdescription" : "Space Sloop Door",
-  "race" : "nickit",
+  "race" : "meowscarada",
 
   "inventoryIcon" : "shipdooricon.png",
   "orientations" : [

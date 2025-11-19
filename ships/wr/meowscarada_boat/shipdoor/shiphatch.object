@@ -1,13 +1,13 @@
 {
   "objectName" : "wr/meowscarada_boat_shiphatch",
-  "colonyTags" : ["nickit","door"],
+  "colonyTags" : ["meowscarada","door"],
   "rarity" : "Common",
 
   "category" : "door",
   "price" : 125,
   "description" : "A hatch suitable for a spaceship.",
   "shortdescription" : "Space Sloop Hatch",
-  "race" : "nickit",
+  "race" : "meowscarada",
 
   "inventoryIcon" : "shiphatchicon.png",
   "orientations" : [

@@ -1,6 +1,6 @@
 {
   "objectName" : "wr/meowscarada_boat_shiplocker",
-  "colonyTags" : ["nickit","storage"],
+  "colonyTags" : ["meowscarada","storage"],
   "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
@@ -9,7 +9,7 @@
   "category" : "storage",
   "description" : "A locker. Store some stuff, why don't you?",
   "shortdescription" : "Shiplocker",
-  "race" : "nickit",
+  "race" : "meowscarada",
   "lightColor" : [102, 90, 61],
 
   "inventoryIcon" : "shiplockericon.png",

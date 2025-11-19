@@ -1,13 +1,13 @@
 {
   "objectName" : "wr/meowscarada_boat_teleporterTier0",
-  "colonyTags" : ["nickit"],
+  "colonyTags" : ["meowscarada"],
   "printable" : false,
   "rarity" : "Common",
 
   "category" : "decorative",
   "description" : "Trusty teleporter, what would we do without you?",
   "shortdescription" : "Teleporter",
-  "race" : "nickit",
+  "race" : "meowscarada",
 
   "objectType" : "loungeable",
   "sitFlipDirection" : true,
