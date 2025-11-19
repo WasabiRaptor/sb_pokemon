@@ -8,10 +8,20 @@
 			"subTitle" : "Au",
 			"description" : "You better watch your wallet..."
 	},
+	"respawnCasualCinematic" : "/cinematics/respawn/wr/pokemon/casual.cinematic",
+	"respawnSurvivalCinematic" : "/cinematics/respawn/wr/pokemon/survival.cinematic",
+	"ai" : {
+		"aiFrames" : "wr/pokemon/ai.png",
+		"portraitFrames" : "wr/pokemon/portrait.png",
+		"staticFrames" : "wr/pokemon/static.png",
+		"questPortrait" : "portraits/wr/pokemonquestportrait.png",
+
+		"directives" : "?replace;5a00b7=107a6e;740de2=139485;9529ff=139485;b168fb=1ac8b4;dcc6ff=d5f4f0"
+	},
 
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
-	"buildScripts" : ["/humanoid/opensb/build.lua"],
+	"buildScripts" : ["/humanoid/opensb/build.lua","/humanoid/wr/build_pokemon.lua"],
 	"humanoidOverrides" : {
 		"useAnimation" : true,
 		"animation" : {
@@ -34,7 +44,7 @@
 					{
 						"particle" : {
 							"type" : "animated",
-							"animation" : "/animations/playerdeath-Wasabi_Raptor_PokemonDeath/playerdeath.animation",
+							"animation" : "/animations/wr/pokemon/playerdeath/anthro/playerdeath.animation",
 							"size" : 1,
 							"angularVelocity" : 0,
 							"fade" : 1,

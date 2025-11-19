@@ -1,5 +1,5 @@
 {
-  "frames" : "playerdeath.png",
+  "frames" : "/animations/wr/pokemon/playerdeath/quadruped/playerdeath.png",
   "variants" : 1,
   "frameNumber" : 14,
   "animationCycle" : 0.8,

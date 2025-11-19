@@ -14,7 +14,7 @@ local player_patch = {}
 local quests_patch = {}
 local aiConfig = assets.json("/ai/ai.config")
 local universeServerConfig = assets.json("/universe_server.config")
-for _, species in ipairs(races) do
+for speciesPath, species in ipairs(races) do
 	local speciesConfig = assets.json("/species/" .. species .. ".species")
 	if speciesConfig.charCreationPatch ~= false then
 		table.insert(charcreation_patch, { op = "add", path = "/speciesOrdering/-", value = species })
@@ -62,15 +62,39 @@ for _, species in ipairs(races) do
 		portraitFrames = "portraits/novakidportrait.png",
 		staticFrames = "staticGlitch.png"
 	}
+	if ai.directives then
+		assets.add("/ai/" .. species .. "/ai.png", assets.image("/ai/" .. ai.aiFrames):process(ai.directives))
+		assets.add("/ai/" .. species .. "/portrait.png", assets.image("/ai/" .. ai.portraitFrames):process(ai.directives))
+		assets.add("/ai/" .. species .. "/static.png", assets.image("/ai/" .. ai.staticFrames):process(ai.directives))
+		assets.add("/ai/portraits/" .. species .. "portrait.png", assets.image("/ai/" .. ai.portraitFrames):process(ai.directives))
+		assets.add("/ai/portraits/" .. species .. "questportrait.png", assets.image("/ai/" .. ai.questPortrait):process(ai.directives))
+
+		assets.add("/ai/" .. species .. "/ai.frames", assets.bytes(assets.frames("/ai/" .. ai.aiFrames).file))
+		assets.add("/ai/" .. species .. "/static.frames", assets.bytes(assets.frames("/ai/" .. ai.staticFrames).file))
+		assets.add("/ai/" .. species .. "/portrait.frames", assets.bytes(assets.frames("/ai/" .. ai.portraitFrames).file))
+		assets.add("/ai/portraits/" .. species .. "portrait.frames", assets.bytes(assets.frames("/ai/" .. ai.portraitFrames).file))
+
+		ai = {
+			aiFrames = species .. "/ai.png",
+			portraitFrames = species .. "/portrait.png",
+			staticFrames = species .. "/static.png"
+		}
+	else
+		if not assets.exists("/ai/portraits/" .. species .. "portrait.png") then
+		assets.add("/ai/portraits/" .. species .. "portrait.png",
+			assets.image("/ai/"..ai.portraitFrames))
+		end
+		if not assets.exists("/ai/portraits/" .. species .. "questportrait.png") then
+			assets.add("/ai/portraits/" .. species .. "questportrait.png",
+			assets.image("/ai/portraits/"..fallbackShip.."questportrait.png"))
+		end
+	end
+
 	ai_patch = sb.jsonMerge(ai_patch, {
 		species = {
 			[species] = ai
 		}
 	})
-	if not assets.exists("/ai/portraits/" .. species .. "portrait.png") then
-		assets.add("/ai/portraits/" .. species .. "portrait.png",
-			assets.image("/ai/"..ai.portraitFrames))
-	end
 
 	player_patch = sb.jsonMerge(player_patch, {
 		defaultCodexes = {
@@ -99,12 +123,12 @@ for _, species in ipairs(races) do
 	end
 	if not assets.exists("/cinematics/respawn/" .. species .. "/respawncasual.cinematic") then
 		assets.add("/cinematics/respawn/" .. species .. "/respawncasual.cinematic",
-			assets.bytes(speciesConfig.respawncasualCinematic or "/cinematics/respawn/wr/template/respawncasual.cinematic")
+			assets.bytes(speciesConfig.respawnCasualCinematic or "/cinematics/respawn/wr/template/respawncasual.cinematic")
 			:gsub("%<species%>", species):gsub("%<effectDirectives%>", speciesConfig.effectDirectives))
 	end
 	if not assets.exists("/cinematics/respawn/" .. species .. "/respawnsurvival.cinematic") then
 		assets.add("/cinematics/respawn/" .. species .. "/respawnsurvival.cinematic",
-			assets.bytes(speciesConfig.respawnsurvivalCinematic or "/cinematics/respawn/wr/template/respawnsurvival.cinematic")
+			assets.bytes(speciesConfig.respawnSurvivalCinematic or "/cinematics/respawn/wr/template/respawnsurvival.cinematic")
 			:gsub("%<species%>", species):gsub("%<effectDirectives%>", speciesConfig.effectDirectives))
 	end
 
@@ -149,11 +173,6 @@ for _, species in ipairs(races) do
 	if not assets.exists("/interface/scripted/techupgrade/suits/" .. species .. "-male-legs.png") then
 		assets.add("/interface/scripted/techupgrade/suits/" .. species .. "-male-legs.png",
 			assets.image("/interface/scripted/techupgrade/suits/wr/template-male-legs.png"))
-	end
-
-	if not assets.exists("/ai/portraits/" .. species .. "questportrait.png") then
-		assets.add("/ai/portraits/" .. species .. "questportrait.png",
-			assets.image("/ai/portraits/"..fallbackShip.."questportrait.png"))
 	end
 
 	aiConfig = sb.jsonMerge(aiConfig, ai_patch)
