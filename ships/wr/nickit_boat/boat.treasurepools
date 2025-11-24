@@ -1,0 +1,9 @@
+{
+	"wr/nickit_boat_StarterTreasure" : [
+		[0, {
+			"fill" : [
+				{"pool" : "starterTreasure"}
+			]
+		}]
+	]
+}

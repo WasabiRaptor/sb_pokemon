@@ -2,7 +2,6 @@
 	"kind" : "wr/nickit",
 
 	"potionRarity" : "rare",
-	"fallbackShip" : "human",
 	"charCreationTooltip" : {
 			"title" : "Nickit",
 			"subTitle" : "Au",
@@ -10,6 +9,18 @@
 	},
 	"respawnCasualCinematic" : "/cinematics/respawn/wr/pokemon/casual.cinematic",
 	"respawnSurvivalCinematic" : "/cinematics/respawn/wr/pokemon/survival.cinematic",
+	"fallbackShip" : "floran",
+	"ships" : [
+		"/ships/wr/nickit_boat/structures/T0.structure",
+		"/ships/wr/nickit_boat/structures/T1.structure",
+		"/ships/wr/nickit_boat/structures/T2.structure",
+		"/ships/wr/nickit_boat/structures/T3.structure",
+		"/ships/wr/nickit_boat/structures/T4.structure",
+		"/ships/wr/nickit_boat/structures/T4.structure",
+		"/ships/wr/nickit_boat/structures/T4.structure",
+		"/ships/wr/nickit_boat/structures/T4.structure",
+		"/ships/wr/nickit_boat/structures/T4.structure"
+	],
 	"ai" : {
 		"aiFrames" : "wr/pokemon/ai.png",
 		"portraitFrames" : "wr/pokemon/portrait.png",

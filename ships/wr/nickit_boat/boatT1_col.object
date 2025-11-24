@@ -1,0 +1,24 @@
+{
+	"objectName" : "wr/nickit_boat_col",
+	"colonyTags" : [],
+	"rarity" : "Common",
+	"category" : "decorative",
+	"price" : 60,
+
+	"description" : "Boat",
+	"shortdescription" : "Boat",
+	"race" : "generic",
+
+	"inventoryIcon" : "boatT1_col.png",
+	"orientations" : [
+		{
+			"imageLayers" : [ { "image" : "boatT1_col.png", "fullbright" : true }, { "image" : "boatT1_col.png?multiply=FFFFFFBD" } ],
+			"imagePosition" : [-368, -16],
+			"renderLayer" : "ForegroundTile+10",
+			"spaceScan" : 1,
+			"anchors" : [ ],
+			"collision" : "solid",
+			"direction" : "right"
+		}
+	]
+}

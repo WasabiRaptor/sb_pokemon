@@ -1,0 +1,32 @@
+{
+	"objectName" : "wr/nickit_boat_fg",
+	"colonyTags" : [],
+	"rarity" : "Common",
+	"category" : "decorative",
+	"price" : 60,
+
+	"description" : "Boat",
+	"shortdescription" : "Boat",
+	"race" : "generic",
+
+	"inventoryIcon" : "boatT1_fg.png",
+	"animation" :"boatT1_fg.animation",
+	"fadeSpeed":2,
+	"scriptDelta" : 2,
+	"scripts" : ["/scripts/wr/objects/foreground_object.lua"],
+	"orientations" : [
+		{
+			"image" : "boatT1_fg.png",
+			"imagePosition" : [-360, -8],
+			"animationPosition" : [-360, -8],
+			"spaces" : [[-45,7],[-41,0],[0,0],[48,15]],
+			"renderLayer" : "ForegroundTile+11",
+			"anchors" : [ ],
+			"direction" : "right"
+		}
+	],
+	"checkRects" :[
+		[-39,3,29,13],
+		[-40,13,-18,20]
+	]
+}
