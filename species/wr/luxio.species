@@ -105,24 +105,24 @@
 		"3"
 	],
 	"furColor" : [
-		"?replace;57a3b9=57a3b9;70b9cf=70b9cf;418093=418093;", // blue (gen6) (default)
-		"?replace;57a3b9=4a4a73;70b9cf=627bb4;418093=7bacf6;", // blue-er (gen4)
-		"?replace;57a3b9=734a31;70b9cf=ac9431;418093=ffd552;" // yellow (gen4 shiny)
+		"?replace;418093=418093;57a3b9=57a3b9;70b9cf=70b9cf;", // blue (gen6) (default)
+		"?replace;418093=4a4a73;57a3b9=627bb4;70b9cf=7bacf6;", // blue-er (gen4)
+		"?replace;418093=734a31;57a3b9=ac9431;70b9cf=ffd552;" // yellow (gen4 shiny)
 	],
 	"fluffColor" : [
-		"?replace;363636=363636;454545=454545;232323=232323", // black (gen6) (default)
-		"?replace;363636=313141;454545=4a4a62;232323=62627b", // bluish black (gen4)
-		"?replace;363636=413631;454545=62514a;232323=7b6a62" // orange-ish black (gen4 shiny) (made up)
+		"?replace;232323=232323;363636=363636;454545=454545", // black (gen6) (default)
+		"?replace;232323=313141;363636=4a4a62;454545=62627b", // bluish black (gen4)
+		"?replace;232323=413631;363636=62514a;454545=7b6a62" // orange-ish black (gen4 shiny) (made up)
 	],
 	"eyeColor" : [
-		"?replace;c39839=c39839FE;efbc46=efbc46FE;9a7627=9a7627FE", // yellow (gen6) (default)
-		"?replace;c39839=736252FE;efbc46=b49c5aFE;9a7627=ffe65aFE", // yellow (gen4)
-		"?replace;c39839=624139FE;efbc46=c5734aFE;9a7627=ff8320FE" // orange (gen4 shiny)
+		"?replace;9a7627=9a7627FE;c39839=c39839FE;efbc46=efbc46FE", // yellow (gen6) (default)
+		"?replace;9a7627=736252FE;c39839=b49c5aFE;efbc46=ffe65aFE", // yellow (gen4)
+		"?replace;9a7627=624139FE;c39839=c5734aFE;efbc46=ff8320FE" // orange (gen4 shiny)
 	],
 
 	"earColor" : [
-		"?replace;2e9861=57a3b9;42c17f=70b9cf;257c4f=418093", // copy fur color
-		"?replace;2e9861=363636;42c17f=454545;257c4f=232323" // copy fluff color
+		"?replace;257c4f=418093;2e9861=57a3b9;42c17f=70b9cf", // copy fur color
+		"?replace;257c4f=232323;2e9861=363636;42c17f=454545" // copy fluff color
 	],
 
 	"defaultBlueprints" : {
