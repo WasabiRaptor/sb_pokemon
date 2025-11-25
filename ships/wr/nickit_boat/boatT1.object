@@ -17,7 +17,7 @@
 			"imageLayers" : [
 				{ "image" : "boatT1.png", "fullbright" : true },
 				{ "image" : "boatT1.png?multiply=FFFFFFBD" },
-				{ "image" : "sail_pulse.png:<frame>", "fullbright" : true  }
+				{ "image" : "sail_pulse.png:<frame>", "fullbright" : true, "position" : [64, 208]  }
 			],
 			"frames" : 28,
 			"animationCycle" : 2,
