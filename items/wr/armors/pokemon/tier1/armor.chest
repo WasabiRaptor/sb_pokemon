@@ -1,12 +1,12 @@
 {
-	"itemName" : "luxiotier1chest",
+	"itemName" : "wr/pokemonArmorTier1Chest",
 	"price" : 800,
 	"inventoryIcon" : "icons.png:chest",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "chestarmour",
-	"description" : "Provides some protection for your neck.",
-	"shortdescription" : "Iron Luxio Collar",
+	"description" : "Provides some protection for your chest.",
+	"shortdescription" : "Quadruped Iron Chestplate",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : {

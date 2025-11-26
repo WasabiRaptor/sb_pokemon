@@ -1,12 +1,12 @@
 {
-	"itemName" : "luxiotier1head",
+	"itemName" : "wr/pokemonArmorTier1Head",
 	"price" : 480,
 	"inventoryIcon" : "icons.png:head",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "headarmour",
-	"description" : "Dim in reference to light, not your intelligence of course...",
-	"shortdescription" : "Iron Luxio Helmet",
+	"description" : "Provides some protection for your head.",
+	"shortdescription" : "Quadruped Iron Helmet",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : "head.png",
